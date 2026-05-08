@@ -1,0 +1,437 @@
+<style type="text/css" media="all">
+
+  @font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RbLtyG5v-92_w.woff2') format('woff2');
+  }
+
+  .pcs-template {
+    font-family: 'Karla', sans-serif;
+    font-size: 9pt;
+    color: #333333;
+    background: #ffffff;
+    margin: 9pt;
+  }
+
+  .pcs-template-body {
+    padding: 0.100000in 0.100000in 0 0.100000in;
+  }
+
+  .custom-hr {
+    border: 1pt solid #efefef;
+  }
+
+  .dotted-hr {
+    border: 1pt dotted #e0e0e0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .dotted-hr-normal {
+    border: 1pt dotted #e0e0e0;
+  }
+
+
+  .pcs-template-dual-table {
+    border: 1pt solid #e0e0e0;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .invoice-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .company-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #171616;
+    margin-bottom: 5px;
+  }
+
+  .company-address {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #6b6b6b;
+  }
+
+  .company-trn {
+    margin-top: 3px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #171616;
+  }
+
+  .pcs-name-slip {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #6b6b6b;
+  }
+
+  .pcs-name-month {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #171616;
+    margin-top: 15px;
+  }
+
+  .pcs-emp-summary {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #6b6b6b;
+    margin-top: 10px;
+  }
+
+  .pcs-emp-detail {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #6b6b6b;
+  }
+
+  .pcs-emp-detail-ans {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #171616;
+  }
+
+  .pcs-table-header {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #171616;
+  }
+
+  .pcs-table-body {
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: #252323;
+  }
+
+  .pcs-table-footer {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #252323;
+  }
+
+  .pay-slip-design {
+    border: 1px solid rgba(176, 176, 176, 0.56);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @page :first {
+    @top-center {
+      content: element(header);
+    } margin-top: 0.100000in;
+
+  }
+
+</style><!--style_end-->
+
+<div class="pcs-template ">
+  <div class="pcs-template-body  invoice-container">
+
+    <table style="width:100%;table-layout: fixed;">
+      <tbody>
+      <tr>
+        <td style="vertical-align: top; max-width:50%;">
+          <div style="display: flex; align-items: start;">
+            <img alt="logo" loading="lazy" id="logo_content" style="height: 80px;"
+                 src="https://cdn.freebiesupply.com/logos/large/2x/hyundai-motor-company-2-logo-png-transparent.png"/>
+
+            <div style="display: flex; flex-direction: column; align-items: start; margin-left: 10px">
+                <span class="company-heading">
+                  Hyuandai Private Limited
+                </span>
+              <span class="company-address">
+                  Office# 109-B silicon ossis main bulavard road
+                </span>
+              <span class="company-address">
+                  Dubai, United Arab Emirates
+                </span>
+              <span class="company-trn">
+                  +971 123 456 78 - TRN: 1209939388944
+                </span>
+            </div>
+
+          </div>
+        </td>
+        <td style="vertical-align: top; max-width:50%;">
+          <div style="display: flex; flex-direction: column; align-items: end; justify-content: start; margin-left: 10px">
+                <span class="pcs-name-slip">
+                  Payslip For the Month
+                </span>
+            <span class="pcs-name-month">
+                  April 2025
+                </span>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="custom-hr" />
+
+
+
+
+    <div class="pcs-template-dual-table">
+      <div style="padding: 6px">
+        <table style="width:100%; table-layout: fixed;">
+          <tbody>
+          <tr>
+            <td style="vertical-align: top; max-width:50%;">
+              <table style="width:100%; table-layout: fixed; padding-right: 10px;">
+                <tbody>
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                      <span class="pcs-table-header">
+                        EARNINGS
+                      </span>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                      <span class="pcs-table-header" style="display: flex; justify-content: end">
+                        AMOUNT
+                      </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="vertical-align: top;">
+                    <hr class="dotted-hr-normal" />
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-body">
+                          Patrol
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-header" style="display: flex; justify-content: end">
+                          AED 500.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-body">
+                          Transportation
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-header" style="display: flex; justify-content: end">
+                          AED 600.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-body">
+                          Medical
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-header" style="display: flex; justify-content: end">
+                          AED 1000.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-body">
+                          House Rent
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-header" style="display: flex; justify-content: end">
+                          AED 4000.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </td>
+
+            <td style="vertical-align: top; max-width:50%;">
+              <table style="width:100%; table-layout: fixed; padding-left: 10px;">
+                <tbody>
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                      <span class="pcs-table-header">
+                        Deductions
+                      </span>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                      <span class="pcs-table-header" style="display: flex; justify-content: end">
+                        AMOUNT
+                      </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="2" style="vertical-align: top;">
+                    <hr class="dotted-hr-normal" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-body">
+                          Income Tax
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-header" style="display: flex; justify-content: end">
+                          AED 2500.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-body">
+                          Provident Fund
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-header" style="display: flex; justify-content: end">
+                          AED 1500.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-body">
+                          Advance
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding-top: 10px">
+                        <span class="pcs-table-header" style="display: flex; justify-content: end">
+                          AED 5500.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <table style="width:100%; table-layout: fixed; margin-top: 10px; background-color: rgba(224,224,224,0.34);">
+        <tbody>
+        <tr>
+          <td style="vertical-align: top; max-width:50%;">
+            <div style="padding: 6px 0px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
+              <table style="width:100%; table-layout: fixed;">
+                <tbody>
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                      <span class="pcs-table-footer">
+                        Gross Earnings
+                      </span>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding: 0 12px">
+                        <span class="pcs-table-footer" style="display: flex; justify-content: end">
+                          AED 5500.00
+                        </span>
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+
+          <td style="vertical-align: top; max-width:50%;">
+            <div style="padding: 6px 0; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
+              <table style="width:100%; table-layout: fixed;">
+                <tbody>
+                <tr>
+                  <td style="vertical-align: top; max-width:50%;">
+                    <div style="padding: 0 8px">
+                        <span class="pcs-table-footer">
+                          Total Deductions
+                        </span>
+                    </div>
+                  </td>
+                  <td style="vertical-align: top; max-width:50%;">
+                      <span class="pcs-table-footer" style="display: flex; justify-content: end">
+                        AED 9500.00
+                      </span>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+<!--    <div style="display: flex; justify-content: end; margin-top: 30px; margin-bottom: 20px">-->
+<!--      <span class="pcs-emp-detail">-->
+<!--         Amount in Words: One hundred and twenty thousand Dirhem Only-->
+<!--      </span>-->
+<!--    </div>-->
+
+    <hr class="custom-hr"/>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 10px; position: fixed; bottom: 0; width: 100%">
+      <span class="pcs-emp-detail">
+         This is the system generated report. no need of sign and signatures
+      </span>
+    </div>
+  </div>
+</div>
