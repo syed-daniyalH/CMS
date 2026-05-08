@@ -6,15 +6,15 @@ import { Box, Divider } from '@mui/material'
 
 // ** Components Imports
 import TableAgentType from 'src/views/definitions/agent-type/list/TableAgentType'
-import Icon from 'src/@core/components/icon'
-import CustomBackdrop from 'src/@core/components/loading'
+import Icon from 'src/core/components/icon'
+import CustomBackdrop from 'src/core/components/loading'
 import { useSelector } from 'react-redux'
 import { RootState } from 'src/store'
 import { useState } from 'react'
 import AgentTypeForm, { AgentTypeSchema } from 'src/views/definitions/agent-type/form'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import { hexToRGBA } from '../../../@core/utils/hex-to-rgba'
+import { hexToRGBA } from '../../../core/utils/hex-to-rgba'
 import Card from '@mui/material/Card'
 
 const AgentTypeList = () => {

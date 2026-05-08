@@ -7,21 +7,21 @@ import Typography from '@mui/material/Typography'
 import Box, { BoxProps } from '@mui/material/Box'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
 import Divider from "@mui/material/Divider";
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
-import PeriodSelector from "src/@core/dropdown-selectors/PeriodSelector";
-import DatePickerWrapper from "src/@core/styles/libs/react-datepicker";
+import PeriodSelector from "src/core/dropdown-selectors/PeriodSelector";
+import DatePickerWrapper from "src/core/styles/libs/react-datepicker";
 import Grid from "@mui/material/Grid";
-import CustomDatePicker from "src/@core/components/custom-date-picker";
-import {globalSendDateFormat} from "src/@core/utils/format";
+import CustomDatePicker from "src/core/components/custom-date-picker";
+import {globalSendDateFormat} from "src/core/utils/format";
 
 // @ts-ignore
 import dateFormat from 'dateformat';
-import TypoLabel from "src/custom-components/inputs/TypoLabel";
+import TypoLabel from "src/components/inputs/TypoLabel";
 
 interface Props {
   open: boolean

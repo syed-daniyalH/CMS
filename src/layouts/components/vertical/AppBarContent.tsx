@@ -3,26 +3,26 @@ import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Type Import
-import { Settings } from 'src/@core/context/settingsContext'
+import { Settings } from 'src/core/context/settingsContext'
 
 // ** Components
 import Autocomplete from 'src/layouts/components/Autocomplete'
-import ModeToggler from 'src/@core/layouts/components/shared-components/ModeToggler'
-import UserDropdown from 'src/@core/layouts/components/shared-components/UserDropdown'
-// import NotificationDropdown from 'src/@core/layouts/components/shared-components/NotificationDropdown'
-import { ShortcutsType } from 'src/@core/layouts/components/shared-components/ShortcutsDropdown'
-import SettingsDropdown  from 'src/@core/layouts/components/shared-components/SettingsDropdown'
+import ModeToggler from 'src/core/layouts/components/shared-components/ModeToggler'
+import UserDropdown from 'src/core/layouts/components/shared-components/UserDropdown'
+// import NotificationDropdown from 'src/core/layouts/components/shared-components/NotificationDropdown'
+import { ShortcutsType } from 'src/core/layouts/components/shared-components/ShortcutsDropdown'
+import SettingsDropdown  from 'src/core/layouts/components/shared-components/SettingsDropdown'
 
 // ** Hook Import
 import { useAuth } from 'src/hooks/useAuth'
-import SwitchOrganization from "../../../@core/layouts/components/shared-components/SwitchOrganization";
+import SwitchOrganization from "../../../core/layouts/components/shared-components/SwitchOrganization";
 import {Divider} from "@mui/material";
 import {useEffect, useState} from "react";
-import LanguageDropdown from "../../../@core/layouts/components/shared-components/LanguageDropdown";
-import LogoutDialog from "../../../custom-components/logged-out-dialog";
+import LanguageDropdown from "../../../core/layouts/components/shared-components/LanguageDropdown";
+import LogoutDialog from "../../../components/logged-out-dialog";
 
 interface Props {
   hidden: boolean

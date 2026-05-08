@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography'
 import Box, { BoxProps } from '@mui/material/Box'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
 import Divider from "@mui/material/Divider";
@@ -15,23 +15,23 @@ import {useTranslation} from "react-i18next";
 import { useState } from 'react'
 import { DocumentDataType } from '../context/types'
 import Grid from '@mui/material/Grid'
-import DropzoneWrapper from '../../../../@core/styles/libs/react-dropzone'
-import SingleFileUploader from '../../../../custom-components/uploaders/SingleFileUplaoder'
-import DocumentTypesSelector from '../../../../@core/dropdown-selectors/DocumentTypesSelector'
+import DropzoneWrapper from '../../../../core/styles/libs/react-dropzone'
+import SingleFileUploader from '../../../../components/uploaders/SingleFileUplaoder'
+import DocumentTypesSelector from '../../../../core/dropdown-selectors/DocumentTypesSelector'
 import { DocumentTypeEmp } from '../../../../store/dropdowns'
-import TypoLabel from '../../../../custom-components/inputs/TypoLabel'
-import CustomTextField from '../../../../@core/components/mui/text-field'
-import CountrySelector from '../../../../@core/dropdown-selectors/CountrySelector'
-import CustomDatePicker from '../../../../@core/components/custom-date-picker'
+import TypoLabel from '../../../../components/inputs/TypoLabel'
+import CustomTextField from '../../../../core/components/mui/text-field'
+import CountrySelector from '../../../../core/dropdown-selectors/CountrySelector'
+import CustomDatePicker from '../../../../core/components/custom-date-picker'
 // @ts-ignore
 import dateFormat from 'dateformat'
-import { globalSendDateFormat } from '../../../../@core/utils/format'
+import { globalSendDateFormat } from '../../../../core/utils/format'
 import toast from 'react-hot-toast'
 import { useCustomer } from '../context/useCustomer'
-import { hexToRGBA } from '../../../../@core/utils/hex-to-rgba'
+import { hexToRGBA } from '../../../../core/utils/hex-to-rgba'
 import Link from 'next/link'
-import CustomBackdrop from '../../../../@core/components/loading'
-import DatePickerWrapper from '../../../../@core/styles/libs/react-datepicker'
+import CustomBackdrop from '../../../../core/components/loading'
+import DatePickerWrapper from '../../../../core/styles/libs/react-datepicker'
 
 interface Props {
   open: boolean

@@ -2,7 +2,7 @@
 import {forwardRef, ReactNode} from 'react'
 
 // ** Custom Component Import
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 import {TextFieldProps} from "@mui/material/TextField";
 
 interface PickerProps {

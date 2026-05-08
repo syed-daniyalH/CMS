@@ -3,7 +3,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import {InventoryPreviewDataType} from "../type";
 import {useAuth} from "src/hooks/useAuth";
-import {AllotmentCertificateHtml} from "src/@core/utils/document-html/sale-agreements/AllotmentCertificateHtml";
+import {AllotmentCertificateHtml} from "src/core/utils/document-html/sale-agreements/AllotmentCertificateHtml";
 import { useAppDefaults } from 'src/hooks/useAppDefaults'
 
 interface Props {

@@ -3,7 +3,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import {InventoryPreviewDataType} from "../type";
 import {useAuth} from "src/hooks/useAuth";
-import {WelcomeLetterHtml} from "src/@core/utils/document-html/sale-agreements/WelcomLetterHtml";
+import {WelcomeLetterHtml} from "src/core/utils/document-html/sale-agreements/WelcomLetterHtml";
 
 interface Props {
   item: InventoryPreviewDataType | null

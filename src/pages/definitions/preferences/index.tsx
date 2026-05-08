@@ -6,8 +6,8 @@ import { Box, Divider } from '@mui/material'
 
 // ** Components Imports
 import TablePreferences from "src/views/definitions/preferences/list/TablePreferences";
-import Icon from 'src/@core/components/icon';
-import CustomBackdrop from "src/@core/components/loading";
+import Icon from 'src/core/components/icon';
+import CustomBackdrop from "src/core/components/loading";
 import {useSelector} from "react-redux";
 import {RootState} from "src/store";
 import {useState} from "react";
@@ -15,7 +15,7 @@ import PreferencesForm, {PreferencesSchema} from "src/views/definitions/preferen
 import Card from '@mui/material/Card'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import { hexToRGBA } from '../../../@core/utils/hex-to-rgba'
+import { hexToRGBA } from '../../../core/utils/hex-to-rgba'
 
 const PreferencesList = () => {
   const {t} = useTranslation();

@@ -14,17 +14,17 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 
 // ** Hook Imports
-import {useSettings} from "src/@core/hooks/useSettings";
+import {useSettings} from "src/core/hooks/useSettings";
 
 // ** Utils Imports
-import { HeaderChipSizes, ContentSizes} from 'src/@core/utils/reports-dashbard-sizes'
-import isScreenViewable from "src/@core/utils/userRights"
+import { HeaderChipSizes, ContentSizes} from 'src/core/utils/reports-dashbard-sizes'
+import isScreenViewable from "src/core/utils/userRights"
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import CustomChip from 'src/@core/components/mui/chip'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import CustomChip from 'src/core/components/mui/chip'
 import Link from "next/link";
 import IconButton from "@mui/material/IconButton";
 import {AbilityContext} from "../../../../layouts/components/acl/Can";

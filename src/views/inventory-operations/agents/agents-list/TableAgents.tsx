@@ -12,14 +12,14 @@ import {
 } from '@mui/x-data-grid'
 
 // ** Custom Components
-import CustomAvatar from 'src/@core/components/mui/avatar'
+import CustomAvatar from 'src/core/components/mui/avatar'
 import AgentsTableActions from "./AgentsTableActions";
 
 // ** Types Imports
-import { ThemeColor } from 'src/@core/layouts/types'
+import { ThemeColor } from 'src/core/layouts/types'
 
 // ** Utils Import
-import { getInitials } from 'src/@core/utils/get-initials'
+import { getInitials } from 'src/core/utils/get-initials'
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "src/store";
 import {useRouter} from "next/router";
@@ -27,15 +27,15 @@ import {useRouter as useNavigationRouter} from "next/navigation";
 import {FilterListObj} from "src/context/types";
 import {AgentDataParams} from "src/store/inventory-operations/agents";
 import {getData} from "src/store/inventory-operations/agents";
-import {decodeParameters, encodeParameters} from "src/@core/utils/encrypted-params";
-import CustomChip from "src/@core/components/mui/chip";
+import {decodeParameters, encodeParameters} from "src/core/utils/encrypted-params";
+import CustomChip from "src/core/components/mui/chip";
 import AgentFilterSidebar from "./sidebar/AgentFilterSidebar";
-import ConfirmationDialog from "src/custom-components/confirmation-dialog";
+import ConfirmationDialog from "src/components/confirmation-dialog";
 import toast from "react-hot-toast";
 import axios from "axios";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import Icon from "src/@core/components/icon";
+import Icon from "src/core/components/icon";
 import {useTranslation} from "react-i18next";
 import { Card } from '@mui/material'
 import IconButton from '@mui/material/IconButton'

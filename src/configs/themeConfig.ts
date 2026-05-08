@@ -17,7 +17,7 @@ import {
   ContentWidth,
   VerticalNavToggle,
   HorizontalMenuToggle
-} from 'src/@core/layouts/types'
+} from 'src/core/layouts/types'
 
 type ThemeConfig = {
   skin: Skin

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Card, CardContent, Grid, Typography, IconButton, Divider } from '@mui/material'
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 const SettingsIndexPage = () => {
   return (

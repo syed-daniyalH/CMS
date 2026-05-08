@@ -11,10 +11,10 @@ import Grid from "@mui/material/Grid";
 
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 import Divider from "@mui/material/Divider";
 import {useTranslation} from "react-i18next";
 //@ts-ignore
@@ -22,24 +22,24 @@ import dateFormat from 'dateformat'
 import axios from "axios";
 import toast from "react-hot-toast";
 import React, {useEffect, useState} from "react";
-import TypoLabel from "src/custom-components/inputs/TypoLabel";
+import TypoLabel from "src/components/inputs/TypoLabel";
 import {getData} from "src/store/inventory-operations/sale-agreements";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "src/store";
-import {saveCloseKey, saveNewKey} from "src/@core/utils/translation-file";
-import FormSaveButton from "src/custom-components/form-save-button";
-import CustomBackdrop from "src/@core/components/loading";
-import FloorSelector from '../../../../@core/dropdown-selectors/FloorSelector'
+import {saveCloseKey, saveNewKey} from "src/core/utils/translation-file";
+import FormSaveButton from "src/components/form-save-button";
+import CustomBackdrop from "src/core/components/loading";
+import FloorSelector from '../../../../core/dropdown-selectors/FloorSelector'
 import { getDefaultFloors } from '../../../../store/dropdowns'
-import { formatCurrency, getProjectDetail, globalSendDateFormat } from '../../../../@core/utils/format'
+import { formatCurrency, getProjectDetail, globalSendDateFormat } from '../../../../core/utils/format'
 import { useAuth } from '../../../../hooks/useAuth'
 import { MenuItem } from '@mui/material'
-import PropertyTypeSelector from 'src/@core/dropdown-selectors/PropertyTypeSelector'
-import PropertyByTypeSelector from 'src/@core/dropdown-selectors/PropertyByTypeSelector'
-import AgentSelector from 'src/@core/dropdown-selectors/AgentSelector'
-import CustomerSelector from 'src/@core/dropdown-selectors/CustomerSelector'
-import CustomDatePicker from 'src/@core/components/custom-date-picker'
-import DatePickerWrapper from 'src/@core/styles/libs/react-datepicker'
+import PropertyTypeSelector from 'src/core/dropdown-selectors/PropertyTypeSelector'
+import PropertyByTypeSelector from 'src/core/dropdown-selectors/PropertyByTypeSelector'
+import AgentSelector from 'src/core/dropdown-selectors/AgentSelector'
+import CustomerSelector from 'src/core/dropdown-selectors/CustomerSelector'
+import CustomDatePicker from 'src/core/components/custom-date-picker'
+import DatePickerWrapper from 'src/core/styles/libs/react-datepicker'
 
 
 interface Props {

@@ -11,25 +11,25 @@ import Grid from "@mui/material/Grid";
 
 
 // ** Icon Imports
-import Icon from '../../../../@core/components/icon'
+import Icon from '../../../../core/components/icon'
 
 // ** Custom Components Imports
-import CustomTextField from '../../../../@core/components/mui/text-field'
+import CustomTextField from '../../../../core/components/mui/text-field'
 import Divider from "@mui/material/Divider";
 import {useTranslation} from "react-i18next";
 import axios from "axios";
 import toast from "react-hot-toast";
 import {useEffect, useState} from "react";
-import TypoLabel from "../../../../custom-components/inputs/TypoLabel";
+import TypoLabel from "../../../../components/inputs/TypoLabel";
 import { getData } from '../../../../store/inventory-operations/projects';
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../../store";
-import {saveCloseKey, saveNewKey} from "../../../../@core/utils/translation-file";
-import FormSaveButton from "../../../../custom-components/form-save-button";
-import CustomBackdrop from "../../../../@core/components/loading";
+import {saveCloseKey, saveNewKey} from "../../../../core/utils/translation-file";
+import FormSaveButton from "../../../../components/form-save-button";
+import CustomBackdrop from "../../../../core/components/loading";
 import { getDefaultFloors } from '../../../../store/dropdowns'
-import ProjectSelector from '../../../../@core/dropdown-selectors/ProjectSelector'
-import ProjectTypeSelector from '../../../../@core/dropdown-selectors/ProjectTypeSelector'
+import ProjectSelector from '../../../../core/dropdown-selectors/ProjectSelector'
+import ProjectTypeSelector from '../../../../core/dropdown-selectors/ProjectTypeSelector'
 
 
 interface Props {

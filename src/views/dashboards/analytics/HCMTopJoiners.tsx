@@ -22,7 +22,7 @@ import {useAuth} from "../../../hooks/useAuth";
 
 //@ts-ignore
 import dateFormat from 'dateformat';
-import {globalDateFormat} from "../../../@core/utils/format";
+import {globalDateFormat} from "../../../core/utils/format";
 
 
 type dataTypes = {

@@ -17,12 +17,12 @@ import {AppDispatch, RootState} from "../../../../store";
 import {useRouter} from "next/router";
 import {useRouter as useNavigationRouter} from "next/navigation";
 import {getData, ProjectSearchParams} from "../../../../store/inventory-operations/projects";
-import {decodeParameters, encodeParameters} from "../../../../@core/utils/encrypted-params";
+import {decodeParameters, encodeParameters} from "../../../../core/utils/encrypted-params";
 import {useTranslation} from "react-i18next";
 import ProjectsTableToolbar from "./ProjectsTableToolbar";
 import IconButton from "@mui/material/IconButton";
-import Icon from '../../../../@core/components/icon';
-import CustomChip from '../../../../@core/components/mui/chip'
+import Icon from '../../../../core/components/icon';
+import CustomChip from '../../../../core/components/mui/chip'
 import { Box } from '@mui/material'
 
 

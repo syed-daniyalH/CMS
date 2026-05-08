@@ -8,18 +8,18 @@ import Link from "next/link";
 // ** MUI Imports
 import {DataGrid, GridColDef, GridRenderCellParams} from '@mui/x-data-grid'
 import {Box, Tooltip, Typography} from "@mui/material"
-import CustomChip from 'src/@core/components/mui/chip'
+import CustomChip from 'src/core/components/mui/chip'
 // ** Types Imports
 
 
 // ** Utils
-import { fixedGridHeaderTop, formatCurrency, formatDate, isDate } from 'src/@core/utils/format'
-import {encodeParameters} from "src/@core/utils/encrypted-params";
+import { fixedGridHeaderTop, formatCurrency, formatDate, isDate } from 'src/core/utils/format'
+import {encodeParameters} from "src/core/utils/encrypted-params";
 import {useTranslation} from "react-i18next";
 //@ts-ignore
 import dateFormat from 'dateformat';
-import {StatusColor} from "../../../../../@core/utils/default-color";
-import DateViewFormat from '../../../../../@core/components/date-view'
+import {StatusColor} from "../../../../../core/utils/default-color";
+import DateViewFormat from '../../../../../core/components/date-view'
 
 export const columns = (
   selected_columns: any[] = [],

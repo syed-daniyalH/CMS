@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
-import CustomTextField from "src/@core/components/mui/text-field";
+import CustomTextField from "src/core/components/mui/text-field";
 import Checkbox from "@mui/material/Checkbox";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";

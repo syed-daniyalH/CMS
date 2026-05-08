@@ -6,15 +6,15 @@ import { Box, Divider } from '@mui/material'
 
 // ** Components Imports
 import TableInstallmentType from 'src/views/definitions/installment-type/list/TableInstallmentType'
-import Icon from 'src/@core/components/icon'
-import CustomBackdrop from 'src/@core/components/loading'
+import Icon from 'src/core/components/icon'
+import CustomBackdrop from 'src/core/components/loading'
 import { useSelector } from 'react-redux'
 import { RootState } from 'src/store'
 import { useState } from 'react'
 import InstallmentTypeForm, { InstallmentTypeSchema } from 'src/views/definitions/installment-type/form'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import { hexToRGBA } from '../../../@core/utils/hex-to-rgba'
+import { hexToRGBA } from '../../../core/utils/hex-to-rgba'
 import Card from '@mui/material/Card'
 
 const InstallmentTypeList = () => {

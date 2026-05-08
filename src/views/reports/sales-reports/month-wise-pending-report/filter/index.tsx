@@ -18,7 +18,7 @@ import Grid from "@mui/material/Grid";
 import TabPanel from "@mui/lab/TabPanel";
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
 import LedgerSummaryFilter from "./LedgerSummaryFilter";
@@ -28,7 +28,7 @@ import LedgerSummaryFilter from "./LedgerSummaryFilter";
 import {useTranslation} from "react-i18next";
 import Divider from "@mui/material/Divider";
 import ReportSettings from "../../../shared-components/ReportSettings";
-import {MonthWisePending} from "../../../../../@core/utils/form-types";
+import {MonthWisePending} from "../../../../../core/utils/form-types";
 
 interface Props {
     open: boolean

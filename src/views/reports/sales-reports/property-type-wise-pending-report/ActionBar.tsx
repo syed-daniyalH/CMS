@@ -23,16 +23,16 @@ import {useTranslation} from "react-i18next";
 import {useAuth} from "src/hooks/useAuth";
 
 // ** Utils Imports
-import {getDateRangeByFilter} from "src/@core/utils/format";
+import {getDateRangeByFilter} from "src/core/utils/format";
 
 // ** Custom imports
-import DateSelector from "src/@core/dropdowns/date";
-import Icon from "src/@core/components/icon";
-import CustomStartPicker from "src/@core/components/custom-picker/StartDatePicker";
-import CustomEndPicker from "src/@core/components/custom-picker/EndDatePicker";
-// import DetailAccountSelector from "src/@core/dropdowns/accounts";
-import {exportPDFReport} from "src/@core/components/export/autotable-pdf";
-import {PropertypeWisePending} from "src/@core/utils/form-types";
+import DateSelector from "src/core/dropdowns/date";
+import Icon from "src/core/components/icon";
+import CustomStartPicker from "src/core/components/custom-picker/StartDatePicker";
+import CustomEndPicker from "src/core/components/custom-picker/EndDatePicker";
+// import DetailAccountSelector from "src/core/dropdowns/accounts";
+import {exportPDFReport} from "src/core/components/export/autotable-pdf";
+import {PropertypeWisePending} from "src/core/utils/form-types";
 
 interface Props {
     loadingPdf: boolean

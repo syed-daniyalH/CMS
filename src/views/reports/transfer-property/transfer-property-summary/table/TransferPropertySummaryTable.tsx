@@ -7,11 +7,11 @@ import Link from "next/link";
 // ** MUI Imports
 import { DataGrid, GridColDef, GridRenderCellParams } from "@mui/x-data-grid";
 import { Box, Typography } from "@mui/material";
-import CustomChip from "src/@core/components/mui/chip";
+import CustomChip from "src/core/components/mui/chip";
 
 // ** Utils
-import { formatCurrency } from "src/@core/utils/format";
-import DateViewFormat from "src/@core/components/date-view";
+import { formatCurrency } from "src/core/utils/format";
+import DateViewFormat from "src/core/components/date-view";
 import { useTranslation } from "react-i18next";
 
 interface Transfer {

@@ -12,11 +12,11 @@ import DialogActions from '@mui/material/DialogActions'
 import MenuItem from '@mui/material/MenuItem'
 import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid'
 import toast from 'react-hot-toast'
-import Icon from 'src/@core/components/icon'
-import CustomChip from 'src/@core/components/mui/chip'
-import CustomTextField from 'src/@core/components/mui/text-field'
-import CustomBackdrop from 'src/@core/components/loading'
-import axiosInstance from 'src/@core/utils/axiosInstence'
+import Icon from 'src/core/components/icon'
+import CustomChip from 'src/core/components/mui/chip'
+import CustomTextField from 'src/core/components/mui/text-field'
+import CustomBackdrop from 'src/core/components/loading'
+import axiosInstance from 'src/core/utils/axiosInstence'
 
 type DepartmentRow = {
   id: string

@@ -71,7 +71,7 @@
   "overrides": [
     {
       "files": [
-        "src/iconify-bundle/*"
+        "src/icons/*"
       ],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"

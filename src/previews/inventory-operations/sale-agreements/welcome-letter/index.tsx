@@ -4,7 +4,7 @@ import IconButton from '@mui/material/IconButton'
 import Box from '@mui/material/Box'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
 import Divider from "@mui/material/Divider";
@@ -18,10 +18,10 @@ import {SyntheticEvent, useEffect, useState} from "react";
 import TabPanel from "@mui/lab/TabPanel";
 import Grid from "@mui/material/Grid";
 import DocumentPreview from "./preview";
-import CustomBackdrop from "src/@core/components/loading";
+import CustomBackdrop from "src/core/components/loading";
 import {InventoryPreviewDataType} from "./preview/type";
 
-import { GET_PROPERTY_DETAIL_LIST } from 'src/graph-ql/sale-agreement/PropertyDetailList'
+import { GET_PROPERTY_DETAIL_LIST } from 'src/graphql/sale-agreement/PropertyDetailList'
 import { useQuery } from '@apollo/client'
 
 interface Props {

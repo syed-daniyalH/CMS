@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import {useTranslation} from "react-i18next";
 
 // @ts-ignore
-import Icon from "../../../@core/components/icon";
+import Icon from "../../../core/components/icon";
 import IconButton from "@mui/material/IconButton";
 
 

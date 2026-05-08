@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography'
 import TreeItem, { TreeItemProps } from '@mui/lab/TreeItem'
 
 // ** Custom Icon Import
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 interface Props {
   direction: 'ltr' | 'rtl'

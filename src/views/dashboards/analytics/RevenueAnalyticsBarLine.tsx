@@ -3,9 +3,9 @@ import {useTheme} from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import {Box, CardHeader} from "@mui/material";
 import CardContent from "@mui/material/CardContent";
-import ReactApexcharts from "../../../@core/components/react-apexcharts";
+import ReactApexcharts from "../../../core/components/react-apexcharts";
 import Divider from "@mui/material/Divider";
-import {getDateFromMonth, getDateRange, globalDateFormat, kFormatter} from "../../../@core/utils/format";
+import {getDateFromMonth, getDateRange, globalDateFormat, kFormatter} from "../../../core/utils/format";
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
@@ -17,8 +17,8 @@ import {useTranslation} from "react-i18next";
 
 //@ts-ignore
 import dateFormat from 'dateformat';
-import OptionMenu from "../../../@core/components/option-menu";
-import {encodeParameters} from "../../../@core/utils/encrypted-params";
+import OptionMenu from "../../../core/components/option-menu";
+import {encodeParameters} from "../../../core/utils/encrypted-params";
 import {useRouter} from "next/navigation";
 
 

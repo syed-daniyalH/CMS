@@ -3,7 +3,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import {InventoryPreviewDataType} from "../type";
 import {useAuth} from "src/hooks/useAuth";
-import {InstallmentPlanHtml} from "src/@core/utils/document-html/sale-agreements/InstallmentPlanHtml";
+import {InstallmentPlanHtml} from "src/core/utils/document-html/sale-agreements/InstallmentPlanHtml";
 import { useAppDefaults } from '../../../../../../hooks/useAppDefaults'
 
 interface Props {

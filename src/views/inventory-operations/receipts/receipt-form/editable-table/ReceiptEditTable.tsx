@@ -18,24 +18,24 @@ import IconButton from "@mui/material/IconButton";
 import {GridStartRowEditModeParams} from "@mui/x-data-grid/models/api/gridEditingApi";
 
 // ** Custom Imports
-import Icon from 'src/@core/components/icon'
-import CustomTextField from "src/@core/components/mui/text-field";
+import Icon from 'src/core/components/icon'
+import CustomTextField from "src/core/components/mui/text-field";
 
 // ** Translation
 import {useTranslation} from "react-i18next";
 import { CardHeader, Divider } from '@mui/material'
-import { cvalue, formatCurrency, getLastEnableColumn } from 'src/@core/utils/format'
+import { cvalue, formatCurrency, getLastEnableColumn } from 'src/core/utils/format'
 import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
-import CustomEmptyState from "src/custom-components/form-table-add-button";
-import InstallmentTypeSelector from 'src/@core/dropdown-selectors/InstallmentTypeSelector'
+import CustomEmptyState from "src/components/form-table-add-button";
+import InstallmentTypeSelector from 'src/core/dropdown-selectors/InstallmentTypeSelector'
 import Button from '@mui/material/Button'
 
 //@ts-ignore
 import { ReceiptDataList } from '../../context/types'
 import { useReceipt } from '../../context/useReceipt'
-import PropertyByCustomerSelector from '../../../../../@core/dropdown-selectors/PropertyByCustomerSelector'
-import InstallmentByCustomerSelector from '../../../../../@core/dropdown-selectors/InstallmentByPropertySelector'
+import PropertyByCustomerSelector from '../../../../../core/dropdown-selectors/PropertyByCustomerSelector'
+import InstallmentByCustomerSelector from '../../../../../core/dropdown-selectors/InstallmentByPropertySelector'
 import toast from 'react-hot-toast'
 
 const tableColumns = (apiRef: any, onClickAdd: any, onClickDelete: any, handleReceiptDetailData: any, details: ReceiptDataList[], t: any, customerId: any) => {

@@ -18,7 +18,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
 import {useEffect, useState} from "react";
 import {getDepartmentStrength} from "../../../store/dashboard";
-import {defaultCurrencyCode, kFormatter} from "../../../@core/utils/format";
+import {defaultCurrencyCode, kFormatter} from "../../../core/utils/format";
 import {useAppDefaults} from "../../../hooks/useAppDefaults";
 
 

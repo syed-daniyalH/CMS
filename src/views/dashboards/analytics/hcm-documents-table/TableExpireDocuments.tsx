@@ -14,14 +14,14 @@ import {
 import EDTableToolbar from './EDTableToolbar'
 
 // ** Types Imports
-import {ThemeColor} from 'src/@core/layouts/types'
+import {ThemeColor} from 'src/core/layouts/types'
 
 // ** Utils Import
-import CustomChip from "src/@core/components/mui/chip";
+import CustomChip from "src/core/components/mui/chip";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "src/store";
-import DateViewFormat from "src/@core/components/date-view";
-import CustomBackdrop from "src/@core/components/loading";
+import DateViewFormat from "src/core/components/date-view";
+import CustomBackdrop from "src/core/components/loading";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import {EmployeeDocumentsParams, getEmployeeDocuments} from "../../../../store/dashboard";

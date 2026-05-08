@@ -6,10 +6,10 @@ import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
 
 // ** Custom Component Import
-import CustomTextField from '../../../../@core/components/mui/text-field'
+import CustomTextField from '../../../../core/components/mui/text-field'
 
 // ** Icon Imports
-import Icon from '../../../../@core/components/icon'
+import Icon from '../../../../core/components/icon'
 
 //** Translation
 import {ProjectSearchParams} from "../../../../store/inventory-operations/projects";

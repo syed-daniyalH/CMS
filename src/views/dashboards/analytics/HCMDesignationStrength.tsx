@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Util Import
 import {useTranslation} from "react-i18next";
@@ -18,7 +18,7 @@ import {
   defaultCurrencyCode,
   formatCurrency,
   kFormatter
-} from "../../../@core/utils/format";
+} from "../../../core/utils/format";
 import {useEffect, useState} from "react";
 import {useAppDefaults} from "../../../hooks/useAppDefaults";
 import {useDispatch, useSelector} from "react-redux";

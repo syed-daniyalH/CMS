@@ -7,7 +7,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 
 // ** Layout Imports
 // !Do not remove this Layout import
-import Layout from 'src/@core/layouts/Layout'
+import Layout from 'src/core/layouts/Layout'
 
 // ** Navigation Imports
 import VerticalNavItems from 'src/navigation/vertical'
@@ -22,13 +22,13 @@ import VerticalAppBarContent from './components/vertical/AppBarContent'
 import HorizontalAppBarContent from './components/horizontal/AppBarContent'
 
 // ** Hook Import
-import {useSettings} from 'src/@core/hooks/useSettings'
+import {useSettings} from 'src/core/hooks/useSettings'
 import {useAuth} from "../hooks/useAuth";
 import {Box} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import {useTranslation} from "react-i18next";
 import IconButton from "@mui/material/IconButton";
-import Icon from "../@core/components/icon";
+import Icon from "../core/components/icon";
 
 interface Props {
   children: ReactNode

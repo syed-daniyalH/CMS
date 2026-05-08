@@ -3,7 +3,7 @@ import { createContext, useMemo, useState } from 'react'
 import axios from 'axios'
 import { DefaultValuesType, ReceiptDataList, ReceiptDataType } from './types'
 import { useAuth } from 'src/hooks/useAuth'
-import { receiptFormType } from 'src/@core/utils/form-types'
+import { receiptFormType } from 'src/core/utils/form-types'
 import toast from 'react-hot-toast'
 
 // ** Defaults

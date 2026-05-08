@@ -1,6 +1,6 @@
 // ** Styled Component
 import {GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType} from "next/types";
-import {decodeParameters} from "src/@core/utils/encrypted-params";
+import {decodeParameters} from "src/core/utils/encrypted-params";
 import ReceiptForm from "src/views/inventory-operations/receipts/receipt-form/ReceiptForm";
 import {ReceiptProvider} from "src/views/inventory-operations/receipts/context/ReceiptContext";
 import {useRouter} from "next/router";

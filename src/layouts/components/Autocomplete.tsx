@@ -24,14 +24,14 @@ import { AutocompleteRenderInputParams } from '@mui/material/Autocomplete'
 import axios from 'axios'
 
 // ** Types Imports
-import { AppBarSearchType } from 'src/@fake-db/types'
-import { Settings } from 'src/@core/context/settingsContext'
+import { AppBarSearchType } from 'src/mock-db/types'
+import { Settings } from 'src/core/context/settingsContext'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Component Import
-import CustomAutocomplete from 'src/@core/components/mui/autocomplete'
+import CustomAutocomplete from 'src/core/components/mui/autocomplete'
 
 // ** Configs Imports
 import themeConfig from 'src/configs/themeConfig'

@@ -17,12 +17,12 @@ import {useRouter} from "next/router";
 import {useRouter as useNavigationRouter} from "next/navigation";
 import {FilterListObj} from "src/context/types";
 import {getData, ReceiptDataParams} from "src/store/inventory-operations/receipts";
-import {decodeParameters, encodeParameters} from "src/@core/utils/encrypted-params";
-import DateViewFormat from 'src/@core/components/date-view'
-import { formatCurrency } from 'src/@core/utils/format'
+import {decodeParameters, encodeParameters} from "src/core/utils/encrypted-params";
+import DateViewFormat from 'src/core/components/date-view'
+import { formatCurrency } from 'src/core/utils/format'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import Icon from '../../../../@core/components/icon'
+import Icon from '../../../../core/components/icon'
 import { useTranslation } from 'react-i18next'
 import IconButton from '@mui/material/IconButton'
 import { Card } from '@mui/material'

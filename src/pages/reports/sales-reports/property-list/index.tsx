@@ -13,7 +13,7 @@ import {useAuth} from "src/hooks/useAuth";
 import {useRouter} from "next/router";
 
 // ** Styled Components
-import DatePickerWrapper from 'src/@core/styles/libs/react-datepicker'
+import DatePickerWrapper from 'src/core/styles/libs/react-datepicker'
 
 // ** Custom imports
 import ActionBar from "src/views/reports/sales-reports/property-list/ActionBar";
@@ -21,12 +21,12 @@ import FilterDrawer from "src/views/reports/sales-reports/property-list/filter";
 import PropertyListReport from "src/views/reports/sales-reports/property-list/PropertyListReport";
 
 // ** Utils
-import { formatDate, formatDateFields, getDateRangeByFilter } from 'src/@core/utils/format'
-import Spinner from 'src/@core/components/spinner';
-import exportToExcel from "src/@core/utils/exportxlsx";
+import { formatDate, formatDateFields, getDateRangeByFilter } from 'src/core/utils/format'
+import Spinner from 'src/core/components/spinner';
+import exportToExcel from "src/core/utils/exportxlsx";
 
 // ** Types
-import {GET_PROPERTY_DETAIL_LIST, } from "src/graph-ql/sale-agreement/PropertyDetailList";
+import {GET_PROPERTY_DETAIL_LIST, } from "src/graphql/sale-agreement/PropertyDetailList";
 
 import {LazyQueryHookOptions, QueryHookOptions, useLazyQuery, useQuery} from "@apollo/client";
 
@@ -35,7 +35,7 @@ import generatePDF, {Margin, Resolution, usePDF} from "react-to-pdf";
 
 // ** Utils
 
-import {decodeParameters, encodeParameters} from "src/@core/utils/encrypted-params";
+import {decodeParameters, encodeParameters} from "src/core/utils/encrypted-params";
 import {useTranslation} from "react-i18next";
 
 

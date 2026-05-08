@@ -10,14 +10,14 @@ import CardContent from '@mui/material/CardContent'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Util Import
 import CardHeader from "@mui/material/CardHeader";
 import Divider from "@mui/material/Divider";
 import {useTranslation} from "react-i18next";
 import {useAuth} from "../../../hooks/useAuth";
-import {defaultCurrencyCode, formatCurrency, getDateRange} from "../../../@core/utils/format";
+import {defaultCurrencyCode, formatCurrency, getDateRange} from "../../../core/utils/format";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
 import {useEffect} from "react";

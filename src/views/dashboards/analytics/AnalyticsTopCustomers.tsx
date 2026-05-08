@@ -16,7 +16,7 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
 import {useAuth} from "../../../hooks/useAuth";
-import {defaultCurrencyCode, formatCurrency, getDateRange} from "../../../@core/utils/format";
+import {defaultCurrencyCode, formatCurrency, getDateRange} from "../../../core/utils/format";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
 import {useEffect, useState} from "react";

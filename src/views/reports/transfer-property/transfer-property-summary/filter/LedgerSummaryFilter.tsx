@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 
 
 // ** Styled Components
-import DatePickerWrapper from 'src/@core/styles/libs/react-datepicker'
+import DatePickerWrapper from 'src/core/styles/libs/react-datepicker'
 
 
 // ** Third party imports
@@ -16,17 +16,17 @@ import {useAuth} from "src/hooks/useAuth";
 
 
 // ** Custom Components Imports
-import DateSelector from "src/@core/dropdowns/date";
-import {getDateRangeByFilter} from "src/@core/utils/format";
+import DateSelector from "src/core/dropdowns/date";
+import {getDateRangeByFilter} from "src/core/utils/format";
 
 import Box from "@mui/material/Box";
-import CustomStartPicker from "src/@core/components/custom-picker/StartDatePicker";
-import CustomEndPicker from "src/@core/components/custom-picker/EndDatePicker";
+import CustomStartPicker from "src/core/components/custom-picker/StartDatePicker";
+import CustomEndPicker from "src/core/components/custom-picker/EndDatePicker";
 import React from "react";
-import FloorSelector from '../../../../../@core/dropdown-selectors/FloorSelector'
-import PropertyTypeSelector from '../../../../../@core/dropdown-selectors/PropertyTypeSelector'
-import PropertyStatusSelector from '../../../../../@core/dropdown-selectors/PropertyStatusSelector'
-import PropertyListSelector from '../../../../../@core/dropdown-selectors/PropertyListSelector'
+import FloorSelector from '../../../../../core/dropdown-selectors/FloorSelector'
+import PropertyTypeSelector from '../../../../../core/dropdown-selectors/PropertyTypeSelector'
+import PropertyStatusSelector from '../../../../../core/dropdown-selectors/PropertyStatusSelector'
+import PropertyListSelector from '../../../../../core/dropdown-selectors/PropertyListSelector'
 
 interface Props {
     state: any

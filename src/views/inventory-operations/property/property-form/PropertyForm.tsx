@@ -6,24 +6,24 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 
 // ** Custom Components Imports
-import Icon from "src/@core/components/icon";
+import Icon from "src/core/components/icon";
 import {useTranslation} from "react-i18next";
 import PropertyFormCard from "src/views/inventory-operations/property/property-form/PropertyFormCard";
 
 
 // ** Styled Component
-import DatePickerWrapper from 'src/@core/styles/libs/react-datepicker'
+import DatePickerWrapper from 'src/core/styles/libs/react-datepicker'
 import {useRouter} from "next/navigation";
-import AttachmentsButton from "src/custom-components/attachments/AttachmentsButton";
-import {propertyFormType} from "src/@core/utils/form-types";
+import AttachmentsButton from "src/components/attachments/AttachmentsButton";
+import {propertyFormType} from "src/core/utils/form-types";
 import {useProperty} from "../context/useProperty";
 import toast from "react-hot-toast";
 import {getData} from "src/store/inventory-operations/customers";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "src/store";
-import CustomBackdrop from "src/@core/components/loading";
-import FormSaveButton from "src/custom-components/form-save-button";
-import {saveCloseKey, saveNewKey} from "src/@core/utils/translation-file";
+import CustomBackdrop from "src/core/components/loading";
+import FormSaveButton from "src/components/form-save-button";
+import {saveCloseKey, saveNewKey} from "src/core/utils/translation-file";
 
 interface Props {
   recno?: number,

@@ -14,8 +14,8 @@ import CrmSalesWithRadarChart from 'src/views/dashboards/crm/CrmSalesWithRadarCh
 import CrmEarningReportsWithTabs from 'src/views/dashboards/crm/CrmEarningReportsWithTabs'
 
 // ** Custom Component Imports
-import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import CardStatsVertical from 'src/@core/components/card-statistics/card-stats-vertical'
+import ApexChartWrapper from 'src/core/styles/libs/react-apexcharts'
+import CardStatsVertical from 'src/core/components/card-statistics/card-stats-vertical'
 
 const CrmDashboard = () => {
   return (

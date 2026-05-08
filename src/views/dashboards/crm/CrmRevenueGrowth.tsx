@@ -9,11 +9,11 @@ import CardContent from '@mui/material/CardContent'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import CustomChip from 'src/@core/components/mui/chip'
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import CustomChip from 'src/core/components/mui/chip'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Util Import
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 
 const series = [{ data: [32, 52, 72, 94, 116, 94, 72] }]
 

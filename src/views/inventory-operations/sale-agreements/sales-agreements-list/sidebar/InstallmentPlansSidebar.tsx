@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography'
 import Box, { BoxProps } from '@mui/material/Box'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
 import Divider from '@mui/material/Divider'
@@ -19,11 +19,11 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import { CardHeader } from '@mui/material'
 import Grid from '@mui/material/Grid'
-import DateViewFormat from '../../../../../@core/components/date-view'
-import { formatCurrency } from '../../../../../@core/utils/format'
+import DateViewFormat from '../../../../../core/components/date-view'
+import { formatCurrency } from '../../../../../core/utils/format'
 import InstallmentPlansEditTable from './editable-table/InstallmentsEditTable'
-import CustomBackdrop from '../../../../../@core/components/loading'
-import DatePickerWrapper from '../../../../../@core/styles/libs/react-datepicker'
+import CustomBackdrop from '../../../../../core/components/loading'
+import DatePickerWrapper from '../../../../../core/styles/libs/react-datepicker'
 
 interface Props {
   open: boolean

@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
-import AnalyticsStatsCard from "../../../@core/components/card-statistics/card-stats-vertical";
-import {defaultCurrencyCode, getDateRange, globalDateFormat, kFormatter} from "../../../@core/utils/format";
+import AnalyticsStatsCard from "../../../core/components/card-statistics/card-stats-vertical";
+import {defaultCurrencyCode, getDateRange, globalDateFormat, kFormatter} from "../../../core/utils/format";
 import AnalyticsCashFlow from "../analytics/AnalyticsCashFlow";
 import AnalyticsBankTransactions from "../analytics/AnalyticsBankTransactions";
 import AnalyticsAgingReceivable from "../analytics/AnalyticsAgingReceivable";

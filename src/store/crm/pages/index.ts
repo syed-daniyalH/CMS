@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, CreateSliceOptions } from '@reduxjs/toolkit'
-import axiosInstance from 'src/@core/utils/axiosInstence'
+import axiosInstance from 'src/core/utils/axiosInstence'
 
 export interface CmsPagesSearchParams {
   page: number

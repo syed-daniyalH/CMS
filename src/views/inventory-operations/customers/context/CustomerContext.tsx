@@ -3,7 +3,7 @@ import { createContext, useEffect, useMemo, useState } from 'react'
 import axios from "axios";
 import { CustomerDataType, DefaultValuesType, DocumentDataType, Nominee } from './types'
 import {useAuth} from "src/hooks/useAuth";
-import { customerFormType, customerProfileFormType } from 'src/@core/utils/form-types'
+import { customerFormType, customerProfileFormType } from 'src/core/utils/form-types'
 
 // ** Defaults
 const defaultProvider: DefaultValuesType = {
