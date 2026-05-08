@@ -1,0 +1,951 @@
+<!--The below style_start tag has to be present as it is used to substring the style content from the body html--><!--style_start-->
+<style type="text/css" media="all">
+
+  /* .replace(/([^:]\/)\/+/g, "$1") */
+
+  @font-face {
+    font-family: 'WebFont-Open Sans';
+    src: local(Open Sans), url(https://fonts.gstatic.com/s/opensans/v14/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2);
+
+  }
+
+  .pcs-template {
+    font-family: Open Sans, 'WebFont-Open Sans';
+    font-size: 9pt;
+    color: #333333;
+    background: #ffffff;
+
+  }
+
+  .pcs-header-content {
+    font-size: 9pt;
+    color: #333333;
+    background: url(https://books.zoho.com/Templates_HeaderBG_2760061000000017003.zbfs?organization_id=755430118&last_modified_time=1747290157316) no-repeat center center;
+    background-size: 794px;
+
+  }
+
+  .pcs-template-body {
+    padding: 0 0.400000in 0 0.550000in;
+
+  }
+
+  .pcs-template-footer {
+    height: 0.700000in;
+    font-size: 6pt;
+    color: #aaaaaa;
+    padding: 0 0.400000in 0 0.550000in;
+    background: url(https://devapis.smartbooks.finance//S3Documents/GetAttachmentFromS3/no/1/1/1/1_638882466054636777) no-repeat center center;
+    background-size: 794px;
+
+  }
+
+  .pcs-footer-content {
+    word-wrap: break-word;
+    color: #aaaaaa;
+
+  }
+
+  .pcs-label {
+    color: #333333;
+
+  }
+
+  .pcs-entity-title {
+    font-size: 28pt;
+    color: #000000;
+
+  }
+
+  .pcs-orgname {
+    font-size: 11pt;
+    color: #333333;
+
+  }
+
+  .pcs-customer-name {
+    font-size: 9pt;
+    color: #333333;
+
+  }
+
+  .pcs-eori-number {
+    color: #333;
+    margin: 0;
+    padding-top: 10px;
+
+  }
+
+  .pcs-itemtable-header {
+    font-size: 9pt;
+    color: #ffffff;
+    background-color: #3c3d3a;
+
+  }
+
+  .pcs-itemtable-breakword {
+    word-wrap: break-word;
+
+  }
+
+  .pcs-taxtable-header {
+    font-size: 9pt;
+    color: #ffffff;
+    background-color: #3c3d3a;
+
+  }
+
+  .breakrow-inside {
+    page-break-inside: avoid;
+
+  }
+
+  .breakrow-after {
+    page-break-after: auto;
+
+  }
+
+  .pcs-item-row {
+    font-size: 9pt;
+    border-bottom: 1px solid #adadad;
+    background-color: #ffffff;
+    color: #000000;
+
+  }
+
+  .pcs-img-fit-aspectratio {
+    object-fit: contain;
+    object-position: top;
+
+  }
+
+  .pcs-item-sku, .pcs-item-hsn, .pcs-item-coupon, .pcs-item-serialnumber, .pcs-item-unitcode {
+    margin-top: 2px;
+    font-size: 10px;
+    color: #444444;
+
+  }
+
+  .pcs-item-desc {
+    color: #333333;
+    font-size: 8pt;
+
+  }
+
+  .pcs-balance {
+    background-color: #f5f4f3;
+    font-size: 9pt;
+    color: #000000;
+
+  }
+
+  .pcs-savings {
+    font-size: 0pt;
+
+  }
+
+  .pcs-totals {
+    font-size: 9pt;
+    color: #000000;
+    background-color: #ffffff;
+
+  }
+
+  .pcs-notes {
+    font-size: 8pt;
+
+  }
+
+  .pcs-terms {
+    font-size: 8pt;
+
+  }
+
+  .pcs-header-first {
+    background: url(https://books.zoho.com/Templates_HeaderBG_2760061000000017003.zbfs?organization_id=755430118&amp;last_modified_time=1747290157316) no-repeat center center;
+    font-size: 9pt;
+    color: #333333;
+    height: 0.700000in;
+
+  }
+
+  .pcs-status {
+    font-size: 15pt;
+    border: 3px solid;
+    padding: 3px 8px;
+
+  }
+
+  .billto-section {
+    padding-top: 0mm;
+    padding-left: 0mm;
+
+  }
+
+  .shipto-section {
+    padding-top: 0mm;
+    padding-left: 0mm;
+
+  }
+
+
+  @page :first {
+    @top-center {
+      content: element(header);
+
+    } margin-top: 0.700000in;
+
+  }
+
+  .pcs-template-header {
+    padding: 0 0.400000in 0 0.550000in;
+    height: 0.700000in;
+
+  }
+
+  .pcs-template-fill-emptydiv {
+    display: table-cell;
+    content: " ";
+    width: 100%;
+
+  }
+
+  /* Additional styles for RTL compat */ /* Helper Classes */
+  .inline {
+    display: inline-block;
+
+  }
+
+  .v-top {
+    vertical-align: top;
+
+  }
+
+  .text-align-right {
+    text-align: right;
+
+  }
+
+  .rtl .text-align-right {
+    text-align: left;
+
+  }
+
+  .text-align-left {
+    text-align: left;
+
+  }
+
+  .rtl .text-align-left {
+    text-align: right;
+
+  }
+
+  .float-section-right {
+    float: right;
+
+  }
+
+  .rtl .float-section-right {
+    float: left;
+
+  }
+
+  .float-section-left {
+    float: left;
+
+  }
+
+  .rtl .float-section-left {
+    float: right;
+
+  }
+
+  /* Helper Classes End */
+  .item-details-inline {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    max-width: 70%;
+
+  }
+
+  .total-in-words-container {
+    width: 100%;
+    margin-top: 10px;
+
+  }
+
+  .total-in-words-label {
+    vertical-align: top;
+    padding: 0 10px;
+
+  }
+
+  .total-in-words-value {
+    width: 170px;
+
+  }
+
+  .total-section-label {
+    padding: 5px 10px 5px 0;
+    vertical-align: middle;
+
+  }
+
+  .total-section-value {
+    width: 120px;
+    vertical-align: middle;
+    padding: 10px 10px 10px 5px;
+
+  }
+
+  .rtl .total-section-value {
+    padding: 10px 5px 10px 10px;
+
+  }
+
+  .tax-summary-description {
+    color: #727272;
+    font-size: 8pt;
+
+  }
+
+  .bharatqr-bg {
+    background-color: #f4f3f8;
+
+  }
+
+  /* Overrides/Patches for RTL compat */
+  .rtl th {
+    text-align: inherit; /* Specifically setting th as inherit for supporting RTL */
+
+  }
+
+  /* Overrides/Patches End */ /* Subject field styles */
+  .subject-block {
+    margin-top: 20px;
+
+  }
+
+  .subject-block-value {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: 14pt;
+    margin-top: 5px;
+
+  }
+
+  /* Subject field styles End*/
+  .pcs-sub-label {
+    color: #666;
+    font-size: 10px;
+
+  }
+
+  .pcs-hsnsummary-compact {
+    padding: 0;
+    margin-top: 3px;
+
+  }
+
+  .pcs-hsnsummary-label-compact {
+    margin-bottom: 3px;
+    font-weight: 600;
+    padding-left: 3px;
+    font-size: 9pt;
+
+  }
+
+  .pcs-hsnsummary-header-compact {
+    text-align: right;
+    padding: 5px 7px 2px 7px;
+    word-wrap: break-word;
+    width: 17%;
+    height: 32px;
+    border-right: 1px solid #9E9E9E;
+    font-size: 8pt;
+    font-weight: 600;
+
+  }
+
+  .pcs-hsnsummary-body-compact, .pcs-hsnsummary-total-compact {
+    text-align: right;
+    word-wrap: break-word;
+    font-size: 7pt;
+    padding: 4px 10px;
+
+  }
+
+  .pcs-hsnsummary-total-compact {
+    border-top: 1px solid #adadad;
+
+  }
+
+  .pcs-ukvat-summary {
+    margin-top: 50px;
+    clear: both;
+    width: 100%;
+
+  }
+
+  .pcs-ukvat-summary-header {
+    padding: 5px 10px 5px 5px;
+
+  }
+
+  .pcs-ukvat-summary-header:first-child {
+    padding-left: 10px;
+
+  }
+
+  .pcs-ukvat-summary-label {
+    font-size: 10pt;
+
+  }
+
+  .pcs-ukvat-summary-table {
+    margin-top: 10px;
+    width: 100%;
+    table-layout: fixed;
+
+  }
+
+  .pcs-ukvat-summary-body, .pcs-ukvat-summary-total {
+    padding: 10px 10px 5px 10px;
+
+  }
+
+  .pcs-ukvat-summary-body:first-child {
+    padding-bottom: 10px;
+    padding-right: 0;
+
+  }
+
+  .pcs-payment-block {
+    margin-top: 20px;
+
+  }
+
+  .pcs-payment-block-inner {
+    margin-top: 10px;
+
+  }
+
+  .pcs-entity-label-section {
+    padding: 5px 10px 5px 0px;
+    font-size: 10pt;
+
+  }
+
+  .pcs-colon {
+    width: 3%;
+
+  }
+
+  .retention-block-label {
+    padding: 5px 10px 5px 0;
+
+  }
+
+  .retention-block-value {
+    padding: 10px 10px 10px 5px;
+
+  }
+
+  .pcs-d-inline {
+    display: inline;
+
+  }
+
+  .bank-details-section {
+    margin-top: 10px;
+    width: 100%;
+    word-wrap: break-word;
+
+  }
+
+  .pcs-w-100 {
+    width: 100%;
+
+  }
+
+  .pcs-h-10px {
+    height: 10px;
+
+  }
+
+  .pcs-w-120px {
+    width: 120px;
+
+  }
+
+  .pcs-w-110px {
+    width: 110px;
+
+  }
+
+  .pcs-w-50 {
+    width: 50%;
+
+  }
+
+  .pcs-d-table-cell {
+    display: table-cell;
+
+  }
+
+  .pcs-talign-center {
+    text-align: center;
+
+  }
+
+  .pcs-wordwrap-bw {
+    word-wrap: break-word;
+
+  }
+
+  .pcs-whitespace-pw {
+    white-space: pre-wrap;
+
+  }
+
+  .pcs-fw-600 {
+    font-weight: 600;
+
+  }
+
+  .pcs-text-uppercase {
+    text-transform: uppercase;
+
+  }
+
+  .pcs-text-underline {
+    text-decoration: underline;
+
+  }
+
+  .pcs-text-red {
+    color: red;
+
+  }
+
+  .pcs-dark-grey {
+    color: #666;
+
+  }
+
+  .pcs-fs-10 {
+    font-size: 10px;
+
+  }
+
+  .pcs-fs-12 {
+    font-size: 12px;
+
+  }
+
+  .pcs-table-fixed {
+    table-layout: fixed;
+
+  }
+
+  .pcs-valign-middle {
+    vertical-align: middle;
+
+  }
+
+  .pcs-clearfix {
+    clear: both;
+
+  }
+
+  .pcs-pb-0 {
+    padding-bottom: 0px;
+
+  }
+
+  .pcs-pb-5 {
+    padding-bottom: 5px;
+
+  }
+
+  .pcs-pb-2 {
+    padding-bottom: 2px;
+
+  }
+
+  .pcs-pt-20 {
+    padding-top: 20px;
+
+  }
+
+  .pcs-pt-5 {
+    padding-top: 5px;
+
+  }
+
+  .pcs-pt-10 {
+    padding-top: 10px;
+
+  }
+
+  .pcs-pt-3 {
+    padding-top: 3px;
+
+  }
+
+  .pcs-pt-0 {
+    padding-top: 0px;
+
+  }
+
+  .pcs-px-10 {
+    padding-right: 10px;
+    padding-left: 10px;
+
+  }
+
+  .pcs-py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+  }
+
+  .pcs-mt-5 {
+    margin-top: 5px;
+
+  }
+
+  .pcs-px-20 {
+    padding-right: 20px;
+    padding-left: 20px;
+
+  }
+
+  .pcs-py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .pcs-ps-5 {
+    padding-left: 5px;
+
+  }
+
+  .pcs-pe-10 {
+    padding-right: 10px;
+
+  }
+
+  .word-wrap-break-word {
+    word-wrap: break-word;
+
+  }
+
+  .pcs-border-color-ebeaf2 {
+    border-color: #ebeaf2 !important;
+
+  }
+
+  .lineitem-column {
+    padding: 10px 10px 5px 10px;
+    word-wrap: break-word;
+    vertical-align: top;
+
+  }
+
+  .lineitem-content-right {
+    padding: 10px 10px 10px 5px;
+
+  }
+
+  .rtl .lineitem-content-right {
+    padding: 10px 5px 10px 10px;
+
+  }
+
+  .total-number-section {
+    width: 45%;
+    padding: 0 10px 3px 3px;
+    font-size: 9pt;
+    float: left;
+
+  }
+
+  .rtl .total-number-section {
+    float: right;
+
+  }
+
+  .total-section {
+    float: right;
+    width: 50%;
+
+  }
+
+  .rtl .total-section {
+    float: left;
+
+  }
+
+</style><!--style_end-->
+<div class="pcs-template ">
+  <div id="header" class="pcs-template-header pcs-header-content">
+    <div class="pcs-template-fill-emptydiv"></div>
+  </div>
+  <div class="pcs-template-body">
+    <table style="width:100%;table-layout: fixed;">
+      <tbody>
+      <tr>
+        <td style="vertical-align: top; width:50%;">
+          <div><img loading="lazy" id="logo_content" style="width:241px;height:70.09889596303304px;"
+                    src="https://books.zoho.com/ZFInvoiceLogo.zbfs?logo_id=bc177cf4b54ae43c318fde6c950d2d25"/>
+          </div>
+          <span class="pcs-orgname"><b>Smart Access Technology Service</b></span><br/> <span class="pcs-label">              <span
+          id="tmp_org_address" style="white-space: pre-wrap;word-wrap: break-word;">Office 216, Le Solarium Tower&#10;Dubai Silicon Oasis, Dubai&#10;United Arab Emirates&#10;Phone: 042222429&#10;TRN 100537412700003</span>            </span>
+        </td>
+        <td style="width:50%;" class="text-align-right v-top"><span class="pcs-entity-title">Quotation</span><br/> <span
+          class="pcs-label" style="font-size: 10pt;"
+          id="tmp_entity_number"><b># EST-000013</b></span></td>
+      </tr>
+
+      </tbody>
+    </table>
+    <table style="width:100%;margin-top:30px;table-layout:fixed;">
+      <tr>
+        <td style="width:60%;vertical-align:bottom;word-wrap: break-word;">
+          <div><label class="pcs-label" id="tmp_billing_address_label" style="font-size: 10pt;">Bill To</label>
+            <br/><span id="tmp_billing_address" style="white-space: pre-wrap;"><strong><span
+              id="zb-pdf-customer-detail" class="pcs-customer-name">Ahmad Rasheed</span></strong>2998383pakTRN
+        121212121212121</span>
+          </div>
+        </td>
+        <td style="vertical-align:bottom;width: 40%;" align="right">
+          <table cellpadding="0" cellspacing="0" border="0" style="float:right;table-layout: fixed;word-wrap:
+             break-word;width: 100%;">
+            <tbody>
+            <tr>
+              <td class="text-align-right" style="padding:5px 10px 5px 0px;font-size:10pt;"><span class="pcs-label">Estimate Date :</span>
+              </td>
+              <td class="text-align-right"><span id="tmp_entity_date">01 Jul 2025</span></td>
+
+            </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0" class="pcs-itemtable"
+           style="width:100%;margin-top:20px;table-layout:fixed;">
+      <thead>
+      <tr style="height:32px;">
+        <td class="pcs-itemtable-header pcs-itemtable-breakword"
+            style="padding: 5px 0px 5px 5px;width: 5%;text-align: center;"> #
+        </td>
+        <td class="pcs-itemtable-header pcs-itemtable-breakword" style="padding: 5px 10px 5px 20px;text-align: left;">
+          Item &amp; Description
+        </td>
+        <td class="pcs-itemtable-header pcs-itemtable-breakword"
+            style="padding: 5px 10px 5px 5px;width: 11%;text-align: right;"> Qty
+        </td>
+        <td class="pcs-itemtable-header pcs-itemtable-breakword"
+            style="padding: 5px 10px 5px 5px;width: 11%;text-align: right;"> Rate
+        </td>
+        <td class="pcs-itemtable-header pcs-itemtable-breakword"
+            style="padding: 5px 10px 5px 5px;width: 11%;text-align: right;"> Tax
+        </td>
+        <td class="pcs-itemtable-header pcs-itemtable-breakword"
+            style="padding: 5px 10px 5px 5px;width: 15%;text-align: right;"> Amount
+        </td>
+      </tr>
+
+      </thead>
+
+      <tbody class="itemBody">
+      <tr class="breakrow-after">
+        <td class="pcs-item-row" style="padding: 10px 0 10px 5px;text-align: center;word-wrap: break-word; "
+            valign="top"> 1
+        </td>
+        <td class="pcs-item-row lineitem-column " style="padding: 10px 0px 10px 20px;">
+          <div style=" ">
+            <div><span id="tmp_item_name_1" style="word-wrap: break-word;">Ajwa Dates</span><br/> <span
+              id="tmp_item_description_1" class="pcs-item-desc" style="white-space: pre-wrap;word-wrap: break-word;">C/JaNYr4HjqPL
+        BNNpiLYZr hggt3hSxchntO0C9 o2ewLGxl5GLB1B0S4iyNdkVPrjwDoK4DSdXwLkz38a+Z56
+        Xkhnr5npmiAEqJQMTmzVce/hveLw2hfmZR0BiwDELGB05iB dfOIeCVkSEEFevX8KduzekVpwraPCjuiRPdApZ2q0r83i4BNrPfv0PHbkLtxT
+        2Xl YKJwa6I7vG0NuzQwrfJhwkmQkrKyj8DCtYrk9hem4cyyvLSGNyzzzUG4FoQQw7hGaEyLQufVy1eSiUejC29yiGe0ZhZxVo
+        QQEW8Us9wP2Zy/h 86gKClB7Q hmtVxQOmfgxTa8FygTr1CTqDd+UBpb3ElgcsoL+6D6+cPY8 4MRGwJ7NJKhS
+        wVJvH7PwdfDFzUwJj4oCcMNtSWrAw4P aboVoeRLvdEAMsl XI4cvg59Lj7pZTGQFHQHiFR c/tVAbbSu5K5Tegp xa2JT/B4aVKY4AO DinSas
+        wcke zU77JsojlSTo04kmKGBhZ VJ3J64imbTR8EbwctnXodjK wo90ECGDUw t/gFz87NYfkzSrQPdTBCEdW iGOjicBAdmoX xHwyQAn
+        Ee51I+B3gOo5 HcAgYVCjjG3j+WNR7hy7 aKUER3Xw/Hjp1EuDkkt2NBc0Qw LnCb3ZxzXwLI/icW1WcxNzy</span>
+
+            </div>
+
+          </div>
+        </td>
+        <td class="pcs-item-row lineitem-column text-align-right " valign="top">                  <span
+          id="tmp_item_qty_1">10.00</span></td>
+        <td class="pcs-item-row lineitem-column text-align-right " valign="top">                  <span
+          id="tmp_item_rate_1">2,500.00</span></td>
+        <td class="pcs-item-row lineitem-column lineitem-content-right text-align-right " valign="top">
+          <div id="tmp_item_t_1ax_amount">1,190.48</div>
+          <div id="tmp_item_tax_1_rate" class="pcs-item-desc">5.00%</div>
+        </td>
+        <td class="pcs-item-row lineitem-column lineitem-content-right text-align-right "
+            valign="top">              <span
+          id="tmp_item_amount_1">25,000.00</span></td>
+      </tr>
+      <tr class="breakrow-after">
+        <td class="pcs-item-row" style="padding: 10px 0 10px 5px;text-align: center;word-wrap: break-word; "
+            valign="top"> 2
+        </td>
+        <td class="pcs-item-row lineitem-column " style="padding: 10px 0px 10px 20px;">
+          <div style=" ">
+            <div><span id="tmp_item_name" style="word-wrap: break-word;">Air Pods</span><br/> <span
+              id="tmp_item_description" class="pcs-item-desc" style="white-space: pre-wrap;word-wrap: break-word;">C/JaNYr4HjqPL
+    BNNpiLYZr hggt3hSxchntO0C9 o2ewLGxl5GLB1B0S4iyNdkVPrjwDoK4DSdXwLkz38a+Z56
+    Xkhnr5npmiAEqJQMTmzVce/hveLw2hfmZR0BiwDELGB05iB dfOIeCVkSEEFevX8KduzekVpwraPCjuiRPdApZ2q0r83i4BNrPfv0PHbkLtxT 2Xl
+    YKJwa6I7vG0NuzQwrfJhwkmQkrKyj8DCtYrk9hem4cyyvLSGNyzzzUG4FoQQw7hGaEyLQufVy1eSiUejC29yiGe0ZhZxVo QQEW8Us9wP2Zy/h
+    86gKClB7Q hmtVxQOmfgxTa8FygTr1CTqDd+UBpb3ElgcsoL+6D6+cPY8 4MRGwJ7NJKhS wVJvH7PwdfDFzUwJj4oCcMNtSWrAw4P
+    aboVoeRLvdEAMsl XI4cvg59Lj7pZTGQFHQHiFR c/tVAbbSu5K5Tegp xa2JT/B4aVKY4AO DinSas wcke zU77JsojlSTo04kmKGBhZ
+    VJ3J64imbTR8EbwctnXodjK wo90ECGDUw t/gFz87NYfkzSrQPdTBCEdW iGOjicBAdmoX xHwyQAn Ee51I+B3gOo5 HcAgYVCjjG3j+WNR7hy7
+    aKUER3Xw/Hjp1EuDkkt2NBc0Qw LnCb3ZxzXwLI/icW1WcxNzy</span>
+            </div>
+          </div>
+        </td>
+        <td class="pcs-item-row lineitem-column text-align-right " valign="top"><span id="tmp_item_qty">1.00</span></td>
+        <td class="pcs-item-row lineitem-column text-align-right " valign="top"><span id="tmp_item_rate">120.00</span>
+        </td>
+        <td class="pcs-item-row lineitem-column lineitem-content-right text-align-right " valign="top">
+          <div id="tmp_item_tax_amount">5.71</div>
+
+          <div id="tmp_item_tax_rate" class="pcs-item-desc">5.00%</div>
+        </td>
+        <td class="pcs-item-row lineitem-column lineitem-content-right text-align-right " valign="top"><span
+          id="tmp_item_amount">120.00</span></td>
+      </tr>
+      <tr class="pcs-sub-total-row breakrow-inside breakrow-after" style="height:20px;">
+        <td colspan="4" class="pcs-item-row lineitem-column lineitem-content-right text-align-right"><b>Sub
+          Total</b></td>        <!--Indian edition total tax columns-->        <!--Other edition total tax columns-->
+        <td class="pcs-item-row lineitem-column lineitem-content-right text-align-right">
+          <div>1,196.19</div>
+        </td>
+        <td class="pcs-item-row lineitem-column lineitem-content-right
+    text-align-right">25,120.00
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div style="width: 100%;margin-top: 1px;">
+      <div class="total-number-section">
+        <div class="pcs-pt-5">
+          <div style="white-space: pre-wrap;">
+          </div>
+
+        </div>
+      </div>
+      <div class="total-section">
+        <table width="100%" border="0" cellspacing="0" class="pcs-totals">
+          <tbody>
+          <tr class="pcs-balance" style="height:40px;">
+            <td class="total-section-label text-align-right"><b>Total</b></td>
+            <td class="total-section-value text-align-right" id="tmp_total"><b>AED25,120.00</b></td>
+          </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+    <div class="pcs-ukvat-summary"><label class="pcs-label pcs-ukvat-summary-label" id="tmp_vat_summary_label">Tax
+      Summary</label>
+      <table cellpadding="0" cellspacing="0" border="0" class="pcs-itemtable pcs-ukvat-summary-table">
+        <thead>
+        <tr style="height:32px;">
+          <td class="pcs-taxtable-header pcs-ukvat-summary-header" style="word-wrap: break-word;"> Tax Details</td>
+          <td class="pcs-taxtable-header text-align-right pcs-ukvat-summary-header"
+              style="word-wrap: break-word;width: 25%;"> Taxable Amount (AED)
+          </td>
+          <td class="pcs-taxtable-header text-align-right pcs-ukvat-summary-header"
+              style="word-wrap: break-word;width: 17%;"> Tax Amount (AED)
+          </td>
+        </tr>
+
+        </thead>
+
+        <tbody class="itemBody">
+        <tr>
+          <td class="pcs-item-row pcs-ukvat-summary-body" valign="top"> <span id="tmp_item_tax_rate_summary"
+                                                                              style="word-wrap: break-word;">Standard Rate
+    (5%)  </span><br/></td>
+          <td class="pcs-item-row text-align-right pcs-ukvat-summary-body" style="word-wrap: break-word;" valign="top"> <span
+            id="tmp_item_taxable_amount_summary">23,923.81</span></td>
+          <td class="pcs-item-row text-align-right pcs-ukvat-summary-body" style="word-wrap: break-word;" valign="top"> <span
+            id="tmp_item_tax_amount_summary">1,196.19</span></td>
+        </tr>
+
+        <tr>
+          <td class="pcs-item-row pcs-ukvat-summary-total" style="word-wrap: break-word;" valign="top"><b>Total</b></td>
+          <td class="pcs-item-row text-align-right pcs-ukvat-summary-total" style="word-wrap: break-word;" valign="top">
+            <b>AED23,923.81</b></td>
+          <td class="pcs-item-row text-align-right pcs-ukvat-summary-total" style="word-wrap: break-word;" valign="top">
+            <b>AED1,196.19</b></td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <div style="clear:both;margin-top:50px;width:100%;"><label class="pcs-label" id="tmp_notes_label"
+                                                               style="font-size: 10pt;"></label><br/>
+      <p
+        class="pcs-notes" style="margin-top:7px;white-space: pre-wrap;word-wrap: break-word;">will be displayed on the
+        estimate</p>
+    </div>
+    <div class="bank-details-section">
+      <div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal;
+       font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2;
+       text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;
+       -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style:
+       initial; text-decoration-color: initial;"><font size="2">For payments, kindly use the following details:</font>
+      </div>
+      <div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant-ligatures:
+     normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px;
+     text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;
+     text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><font
+        size="2"><br></font></div>
+      <div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant-ligatures:
+     normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px;
+     text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;
+     text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><font
+        size="2">Account Title: SMART ACCESS TECHNOLOGY SERVICES<br></font></div>
+      <div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant-ligatures:
+     normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px;
+     text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;
+     text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><font
+        size="2">A/c No. : 019101137816<br></font></div>
+      <div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant-ligatures:
+     normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px;
+     text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;
+     text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><font
+        size="2">IBAN : AE110330000019101137816</font></div>
+      <div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant-ligatures:
+     normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px;
+     text-transform: none; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;
+     text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><font
+        size="2">Bank Name : Mashreq Bank<br></font></div>
+      <div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal;
+     font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2;
+     text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width:
+     0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial;
+     text-decoration-color: initial;"><font size="2">Branch : Mashreq NEO</font><br></div>
+    </div>
+    <div style="page-break-inside: avoid;"></div>
+  </div>
+  <div class="pcs-template-footer" style="margin-top: 15px;">
+    <div></div>
+    <div style="direction: ltr;"></div>
+  </div>
+</div>
