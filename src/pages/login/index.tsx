@@ -9,6 +9,7 @@ import Checkbox from '@mui/material/Checkbox'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
 import Box from '@mui/material/Box'
+import Chip from '@mui/material/Chip'
 import { styled, useTheme } from '@mui/material/styles'
 import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel, { FormControlLabelProps } from '@mui/material/FormControlLabel'
@@ -114,11 +115,26 @@ const LoginPage = () => {
               <img src={(brandConfigs[process.env.NEXT_PUBLIC_APP_NAME??"Indraaj"] || brandConfigs["indraaj"]).logo??'/images/logos/logo.png'} height={34} alt={"LOGO"}/>
             </Box>
             <Box sx={{mb: 6}}>
+              <Chip
+                icon={<Icon icon='tabler:shield-lock' fontSize='0.95rem' />}
+                label='Secure workspace'
+                size='small'
+                variant='outlined'
+                color='primary'
+                sx={{
+                  mb: 3,
+                  borderRadius: '999px',
+                  fontWeight: 600,
+                  '& .MuiChip-label': {
+                    px: 1.2
+                  }
+                }}
+              />
               <Typography variant='h4' sx={{ mb: 1.5 }}>
                 {t("Welcome to")}{` ${themeConfig.templateName}! 👋🏻`}
               </Typography>
               <Typography sx={{ color: 'text.secondary' }}>
-                Please sign-in to your account 
+                Please sign in to your account
               </Typography>
             </Box>
             <form noValidate autoComplete='off' onSubmit={handleSubmit(onSubmit)}>
