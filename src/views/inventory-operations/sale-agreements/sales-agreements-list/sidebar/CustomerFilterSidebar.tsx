@@ -7,14 +7,14 @@ import Typography from '@mui/material/Typography'
 import Box, { BoxProps } from '@mui/material/Box'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 import Divider from "@mui/material/Divider";
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
-import TaxTypeSelector from "src/@core/dropdown-selectors/TaxTypeSelector";
+import TaxTypeSelector from "src/core/dropdown-selectors/TaxTypeSelector";
 import {GenericDropdownObj} from "src/store/dropdowns";
 
 interface Props {

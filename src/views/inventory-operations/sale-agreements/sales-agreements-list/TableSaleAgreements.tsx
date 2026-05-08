@@ -11,13 +11,13 @@ import {
 } from '@mui/x-data-grid'
 
 // ** Custom Components
-import CustomAvatar from 'src/@core/components/mui/avatar'
+import CustomAvatar from 'src/core/components/mui/avatar'
 
 // ** Types Imports
-import { ThemeColor } from 'src/@core/layouts/types'
+import { ThemeColor } from 'src/core/layouts/types'
 
 // ** Utils Import
-import { getInitials } from 'src/@core/utils/get-initials'
+import { getInitials } from 'src/core/utils/get-initials'
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "src/store";
 import {useRouter} from "next/router";
@@ -25,17 +25,17 @@ import {useRouter as useNavigationRouter} from "next/navigation";
 import {FilterListObj} from "src/context/types";
 import {PropertyDataParams} from "src/store/inventory-operations/sale-agreements";
 import {getData} from "src/store/inventory-operations/sale-agreements";
-import {decodeParameters, encodeParameters} from "src/@core/utils/encrypted-params";
+import {decodeParameters, encodeParameters} from "src/core/utils/encrypted-params";
 import CustomerFilterSidebar from "./sidebar/CustomerFilterSidebar";
-import DateViewFormat from '../../../../@core/components/date-view'
-import { formatCurrency } from '../../../../@core/utils/format'
+import DateViewFormat from '../../../../core/components/date-view'
+import { formatCurrency } from '../../../../core/utils/format'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import Icon from '../../../../@core/components/icon'
+import Icon from '../../../../core/components/icon'
 import { useTranslation } from 'react-i18next'
 import IconButton from '@mui/material/IconButton'
 import InstallmentPlansSidebar from './sidebar/InstallmentPlansSidebar'
-import DatePickerWrapper from '../../../../@core/styles/libs/react-datepicker'
+import DatePickerWrapper from '../../../../core/styles/libs/react-datepicker'
 import WelcomeLetterPreview from '../../../../previews/inventory-operations/sale-agreements/welcome-letter'
 import InstallmentPlanPreview from '../../../../previews/inventory-operations/sale-agreements/installment-plan'
 import { useAuth } from '../../../../hooks/useAuth'

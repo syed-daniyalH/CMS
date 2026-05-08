@@ -10,7 +10,7 @@ import CardContent from '@mui/material/CardContent'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Util Import
 import CardHeader from "@mui/material/CardHeader";

@@ -8,8 +8,8 @@ import CardContent from '@mui/material/CardContent'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import OptionsMenu from 'src/@core/components/option-menu'
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import OptionsMenu from 'src/core/components/option-menu'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 const series = [
   { name: 'Sales', data: [32, 27, 27, 30, 25, 25] },

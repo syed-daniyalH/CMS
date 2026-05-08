@@ -11,22 +11,22 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid'
 import LinearProgress from '@mui/material/LinearProgress'
 
 // ** Custom Component Import
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 
 // ** Third Party Imports
 import axios from 'axios'
 
 // ** Types Imports
-import { ThemeColor } from 'src/@core/layouts/types'
-import { ProjectTableRowType } from 'src/@fake-db/types'
+import { ThemeColor } from 'src/core/layouts/types'
+import { ProjectTableRowType } from 'src/mock-db/types'
 
 // ** Custom Components Imports
-import OptionsMenu from 'src/@core/components/option-menu'
-import CustomAvatar from 'src/@core/components/mui/avatar'
+import OptionsMenu from 'src/core/components/option-menu'
+import CustomAvatar from 'src/core/components/mui/avatar'
 
 // ** Utils Import
-import { getInitials } from 'src/@core/utils/get-initials'
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import { getInitials } from 'src/core/utils/get-initials'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 
 interface CellType {
   row: ProjectTableRowType

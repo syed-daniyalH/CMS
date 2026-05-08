@@ -1,7 +1,7 @@
 import jsPDF from 'jspdf'
 import autoTable from 'jspdf-autotable'
 import moment from 'moment'
-import { formatCurrency } from 'src/@core/utils/format'
+import { formatCurrency } from 'src/core/utils/format'
 
 interface Transfer {
   oldCustomerName: string

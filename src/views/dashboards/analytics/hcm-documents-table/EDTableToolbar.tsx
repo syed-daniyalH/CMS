@@ -6,14 +6,14 @@ import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
 
 // ** Custom Component Import
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 //** Translation
 import {useTranslation} from "react-i18next";
-import TitleMenu from "src/@core/components/title-menu";
+import TitleMenu from "src/core/components/title-menu";
 import {EmployeeDocumentsParams} from "../../../../store/dashboard";
 
 interface Props {

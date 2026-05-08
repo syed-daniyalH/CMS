@@ -13,7 +13,7 @@ import {useAuth} from "src/hooks/useAuth";
 import {useRouter} from "next/router";
 
 // ** Styled Components
-import DatePickerWrapper from 'src/@core/styles/libs/react-datepicker'
+import DatePickerWrapper from 'src/core/styles/libs/react-datepicker'
 
 // ** Custom imports
 import ActionBar from "src/views/reports/sales-reports/month-wise-pending-report/ActionBar";
@@ -21,12 +21,12 @@ import FilterDrawer from "src/views/reports/sales-reports/month-wise-pending-rep
 import MonthWisePending from "src/views/reports/sales-reports/month-wise-pending-report/MonthWisePending";
 
 // ** Utils
-import { formatCurrency, formatDate, formatDateFields, getDateRangeByFilter } from 'src/@core/utils/format'
-import Spinner from 'src/@core/components/spinner';
-import exportToExcel from "src/@core/utils/exportxlsx";
+import { formatCurrency, formatDate, formatDateFields, getDateRangeByFilter } from 'src/core/utils/format'
+import Spinner from 'src/core/components/spinner';
+import exportToExcel from "src/core/utils/exportxlsx";
 
 // ** Types
-import {GET_PROPERTY_WISE_REPORT, } from "src/graph-ql/sale-reports/month-wise-pending";
+import {GET_PROPERTY_WISE_REPORT, } from "src/graphql/sale-reports/month-wise-pending";
 
 import {LazyQueryHookOptions, QueryHookOptions, useLazyQuery, useQuery} from "@apollo/client";
 
@@ -35,7 +35,7 @@ import generatePDF, {Margin, Resolution, usePDF} from "react-to-pdf";
 
 // ** Utils
 
-import {decodeParameters, encodeParameters} from "src/@core/utils/encrypted-params";
+import {decodeParameters, encodeParameters} from "src/core/utils/encrypted-params";
 import {useTranslation} from "react-i18next";
 import { GridColDef, GridRenderCellParams } from '@mui/x-data-grid'
 import { Typography } from '@mui/material'

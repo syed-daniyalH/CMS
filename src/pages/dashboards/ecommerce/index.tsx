@@ -15,7 +15,7 @@ import EcommercePopularProducts from 'src/views/dashboards/ecommerce/EcommercePo
 import EcommerceCongratulationsJohn from 'src/views/dashboards/ecommerce/EcommerceCongratulationsJohn'
 
 // ** Custom Component Import
-import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
+import ApexChartWrapper from 'src/core/styles/libs/react-apexcharts'
 
 const EcommerceDashboard = () => {
   return (

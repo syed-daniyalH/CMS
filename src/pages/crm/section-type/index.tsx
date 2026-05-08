@@ -9,9 +9,9 @@ import Card from '@mui/material/Card'
 import IconButton from '@mui/material/IconButton'
 
 // ** Components
-import Icon from 'src/@core/components/icon'
-import CustomBackdrop from 'src/@core/components/loading'
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import Icon from 'src/core/components/icon'
+import CustomBackdrop from 'src/core/components/loading'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 import TableSectionType from 'src/views/crm/section-type/TableSectionType'
 import { SectionTypeProvider } from 'src/views/crm/section-type/add-section-type/context/sectionContext'
 

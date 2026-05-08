@@ -11,7 +11,7 @@ import { styled, useTheme } from '@mui/material/styles'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 
 // ** Util Import
@@ -20,7 +20,7 @@ import {AppDispatch, RootState} from "../../../store";
 import {useDispatch, useSelector} from "react-redux";
 import {useAuth} from "../../../hooks/useAuth";
 import {useEffect, useState} from "react";
-import {getDateRange, kFormatter} from "../../../@core/utils/format";
+import {getDateRange, kFormatter} from "../../../core/utils/format";
 import {useTranslation} from "react-i18next";
 
 const StyledGrid = styled(Grid)<GridProps>(({ theme }) => ({

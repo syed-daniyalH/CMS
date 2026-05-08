@@ -8,8 +8,8 @@ import Button from "@mui/material/Button";
 
 // ** Components Imports
 import TableFloors from "src/views/definitions/floors/list/TableFloors";
-import Icon from 'src/@core/components/icon';
-import CustomBackdrop from "src/@core/components/loading";
+import Icon from 'src/core/components/icon';
+import CustomBackdrop from "src/core/components/loading";
 import {useSelector} from "react-redux";
 import {RootState} from "src/store";
 import {useState} from "react";
@@ -17,9 +17,9 @@ import FloorsForm, {FloorsSchema} from "src/views/definitions/floors/form";
 import Card from '@mui/material/Card'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import { rgbaToHex } from '../../../@core/utils/rgba-to-hex'
-import { hexToRGBA } from '../../../@core/utils/hex-to-rgba'
-import { getProjectDetail } from '../../../@core/utils/format'
+import { rgbaToHex } from '../../../core/utils/rgba-to-hex'
+import { hexToRGBA } from '../../../core/utils/hex-to-rgba'
+import { getProjectDetail } from '../../../core/utils/format'
 import { useAuth } from '../../../hooks/useAuth'
 
 const FloorsList = () => {

@@ -11,7 +11,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector'
 import MuiTimeline, { TimelineProps } from '@mui/lab/Timeline'
 
 // ** Hook Import
-import {getTimeAgo} from "src/@core/utils/format";
+import {getTimeAgo} from "src/core/utils/format";
 import { useState } from 'react'
 
 // Styled Timeline component

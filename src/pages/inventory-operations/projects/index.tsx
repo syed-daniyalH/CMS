@@ -6,17 +6,17 @@ import { Box, Divider } from '@mui/material'
 
 // ** Components Imports
 import TableProjects from '../../../views/inventory-operations/projects/list/TableProjects'
-import Icon from '../../../@core/components/icon'
-import CustomBackdrop from '../../../@core/components/loading'
+import Icon from '../../../core/components/icon'
+import CustomBackdrop from '../../../core/components/loading'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../../store'
 import { useState } from 'react'
 import ProjectsForm, { ProjectsSchema } from '../../../views/inventory-operations/projects/form'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import { hexToRGBA } from '../../../@core/utils/hex-to-rgba'
+import { hexToRGBA } from '../../../core/utils/hex-to-rgba'
 import Card from '@mui/material/Card'
-import CustomTextField from '../../../@core/components/mui/text-field'
+import CustomTextField from '../../../core/components/mui/text-field'
 import Collapse from '@mui/material/Collapse'
 
 const ProjectsList = () => {

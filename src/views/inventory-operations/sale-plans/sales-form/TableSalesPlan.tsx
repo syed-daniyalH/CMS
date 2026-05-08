@@ -27,13 +27,13 @@
 // import { GridStartRowEditModeParams } from "@mui/x-data-grid/models/api/gridEditingApi";
 //
 // // ** Custom Imports
-// import Icon from "src/@core/components/icon";
-// import CustomTextField from "src/@core/components/mui/text-field";
-// import CustomEmptyState from "src/custom-components/form-table-add-button";
-// import DateViewFormat from "src/@core/components/date-view";
-// import InstallmentTypeSelector from "src/@core/dropdown-selectors/InstallmentTypeSelector";
-// import CustomDatePicker from "src/@core/components/custom-date-picker";
-// import CustomChip from "src/@core/components/mui/chip";
+// import Icon from "src/core/components/icon";
+// import CustomTextField from "src/core/components/mui/text-field";
+// import CustomEmptyState from "src/components/form-table-add-button";
+// import DateViewFormat from "src/core/components/date-view";
+// import InstallmentTypeSelector from "src/core/dropdown-selectors/InstallmentTypeSelector";
+// import CustomDatePicker from "src/core/components/custom-date-picker";
+// import CustomChip from "src/core/components/mui/chip";
 //
 // // ** Utils / i18n
 // import { useTranslation } from "react-i18next";
@@ -42,7 +42,7 @@
 //   formatCurrency,
 //   getLastEnableColumn,
 //   globalSendDateFormat,
-// } from "src/@core/utils/format";
+// } from "src/core/utils/format";
 //
 // //@ts-ignore
 // import dateFormat from "dateformat";

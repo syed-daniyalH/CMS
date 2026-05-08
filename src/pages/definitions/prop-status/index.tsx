@@ -6,8 +6,8 @@ import { Box, Divider } from '@mui/material'
 
 // ** Components Imports
 import TablePropStatus from 'src/views/definitions/prop-status/list/TablePropStatus'
-import Icon from 'src/@core/components/icon'
-import CustomBackdrop from 'src/@core/components/loading'
+import Icon from 'src/core/components/icon'
+import CustomBackdrop from 'src/core/components/loading'
 import { useSelector } from 'react-redux'
 import { RootState } from 'src/store'
 import { useState } from 'react'
@@ -15,7 +15,7 @@ import PropStatusForm, { PropStatusSchema } from 'src/views/definitions/prop-sta
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import Card from '@mui/material/Card'
-import { hexToRGBA } from '../../../@core/utils/hex-to-rgba'
+import { hexToRGBA } from '../../../core/utils/hex-to-rgba'
 
 const PropertyStatusList = () => {
   const { t } = useTranslation()

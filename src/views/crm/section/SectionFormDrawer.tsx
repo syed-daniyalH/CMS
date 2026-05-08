@@ -3,13 +3,13 @@ import { Box, Button, Card, Divider, Drawer, Grid, IconButton, MenuItem, Typogra
 import { styled, useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import toast from 'react-hot-toast'
-import Icon from 'src/@core/components/icon'
-import CustomTextField from 'src/@core/components/mui/text-field'
-import TypoLabel from 'src/custom-components/inputs/TypoLabel'
-import FormSaveButton from 'src/custom-components/form-save-button'
-import CustomBackdrop from 'src/@core/components/loading'
-import axiosInstance from 'src/@core/utils/axiosInstence'
-import { saveCloseKey, saveNewKey } from 'src/@core/utils/translation-file'
+import Icon from 'src/core/components/icon'
+import CustomTextField from 'src/core/components/mui/text-field'
+import TypoLabel from 'src/components/inputs/TypoLabel'
+import FormSaveButton from 'src/components/form-save-button'
+import CustomBackdrop from 'src/core/components/loading'
+import axiosInstance from 'src/core/utils/axiosInstence'
+import { saveCloseKey, saveNewKey } from 'src/core/utils/translation-file'
 
 interface Props {
   open: boolean

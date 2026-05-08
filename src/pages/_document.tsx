@@ -8,7 +8,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import createEmotionServer from '@emotion/server/create-instance'
 
 // ** Utils Imports
-import { createEmotionCache } from 'src/@core/utils/create-emotion-cache'
+import { createEmotionCache } from 'src/core/utils/create-emotion-cache'
 import axios, {CreateAxiosDefaults} from "axios";
 import {brandConfigs} from "../configs/branding";
 

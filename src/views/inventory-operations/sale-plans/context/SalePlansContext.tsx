@@ -3,7 +3,7 @@ import {createContext, useMemo, useState} from 'react'
 import axios from "axios";
 import { SalePlansDataType, DefaultValuesType, SubSalePlanObj } from './types'
 import {useAuth} from "src/hooks/useAuth";
-import {salePlansFormType} from "src/@core/utils/form-types";
+import {salePlansFormType} from "src/core/utils/form-types";
 
 // ** Defaults
 

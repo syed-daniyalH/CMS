@@ -14,10 +14,10 @@ import InputAdornment from '@mui/material/InputAdornment'
 import MuiFormControlLabel, { FormControlLabelProps } from '@mui/material/FormControlLabel'
 
 // ** Custom Component Import
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Third Party Imports
 import * as yup from 'yup'
@@ -31,7 +31,7 @@ import { useAuth } from 'src/hooks/useAuth'
 import themeConfig from 'src/configs/themeConfig'
 
 // ** Layout Import
-import BlankLayout from 'src/@core/layouts/BlankLayout'
+import BlankLayout from 'src/core/layouts/BlankLayout'
 
 // ** Demo Imports
 import {LoadingButton} from "@mui/lab";

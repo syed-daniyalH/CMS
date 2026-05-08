@@ -14,7 +14,7 @@ import clsx from 'clsx'
 import { useKeenSlider } from 'keen-slider/react'
 
 // ** Custom Components Imports
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 import {brandConfigs} from "../../../configs/branding";
 
 interface SwiperData {

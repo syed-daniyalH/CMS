@@ -1,6 +1,6 @@
 // ** React Imports
 import {createContext, useEffect, useMemo, useState} from 'react'
-import {defaultCurrencyCode, getFingerprint} from 'src/@core/utils/format'
+import {defaultCurrencyCode, getFingerprint} from 'src/core/utils/format'
 import axios from "axios";
 import {
   CurrencyTypeData,

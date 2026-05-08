@@ -11,7 +11,7 @@ import Box from "@mui/material/Box";
 
 // ** Custom Component Imports
 import SalesReports from "./component/SalesReports";
-import ConfirmationDialog from 'src/@core/utils/ConfirmationDialog'
+import ConfirmationDialog from 'src/core/utils/ConfirmationDialog'
 import {AbilityContext} from "src/layouts/components/acl/Can";
 import CustomerReports from './component/CustomerReports'
 

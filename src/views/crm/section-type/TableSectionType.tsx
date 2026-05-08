@@ -17,17 +17,17 @@ import { useRouter } from "next/router";
 import { useRouter as useNavigationRouter } from "next/navigation";
 import { FilterListObj } from "src/context/types";
 import { getData, SectionTypeSearchParams, setLoading } from "src/store/crm/section-type/index";
-import { decodeParameters, encodeParameters } from "src/@core/utils/encrypted-params";
+import { decodeParameters, encodeParameters } from "src/core/utils/encrypted-params";
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 import { useTranslation } from 'react-i18next'
 import IconButton from '@mui/material/IconButton'
 import { Card } from '@mui/material'
-import CustomChip from 'src/@core/components/mui/chip'
+import CustomChip from 'src/core/components/mui/chip'
 import { useSectionType } from './add-section-type/context/useSectionType'
 import toast from 'react-hot-toast'
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 
 
 const columns = (handleMouseEnter: any): GridColDef[] => [

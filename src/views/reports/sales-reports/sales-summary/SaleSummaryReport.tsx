@@ -5,7 +5,7 @@ import {useTranslation} from "react-i18next";
 import {useAuth} from "src/hooks/useAuth";
 
 // ** Utils
-import {formatDate} from "src/@core/utils/format";
+import {formatDate} from "src/core/utils/format";
 
 // ** MUI imports
 import CardHeader from "@mui/material/CardHeader";

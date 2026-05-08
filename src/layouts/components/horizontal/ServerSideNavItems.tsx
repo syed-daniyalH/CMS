@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 // ** Type Import
-import { HorizontalNavItemsType } from 'src/@core/layouts/types'
+import { HorizontalNavItemsType } from 'src/core/layouts/types'
 
 const ServerSideNavItems = () => {
   // ** State

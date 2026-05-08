@@ -3,7 +3,9 @@
  */
 const getHomeRoute = (role: string) => {
   if (role === 'client') return '/acl'
-  else return '/dashboards'
+  if (role === 'admin' || role === 'editor' || role === 'author') return '/crm/section-type'
+
+  return '/dashboards'
 }
 
 export default getHomeRoute

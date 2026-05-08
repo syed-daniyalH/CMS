@@ -6,12 +6,12 @@ import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
 
 // ** Custom Components Imports
-import Avatar from "../../../@core/components/mui/avatar";
+import Avatar from "../../../core/components/mui/avatar";
 import Divider from "@mui/material/Divider";
 import {useTranslation} from "react-i18next";
 import {useEffect, useState} from "react";
 import {getEstimateStats} from "../../../store/dashboard";
-import {defaultCurrencyCode, formatCurrency, getDateRange} from "../../../@core/utils/format";
+import {defaultCurrencyCode, formatCurrency, getDateRange} from "../../../core/utils/format";
 import {useAuth} from "../../../hooks/useAuth";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";

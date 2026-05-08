@@ -3,7 +3,7 @@ import {createContext, useMemo, useState} from 'react'
 import axios from "axios";
 import { SaleAgreementsDataType, DefaultValuesType, saleAgreementInstallment } from './types'
 import {useAuth} from "src/hooks/useAuth";
-import {saleAgreementsFormType} from "src/@core/utils/form-types";
+import {saleAgreementsFormType} from "src/core/utils/form-types";
 import toast from 'react-hot-toast'
 import { InstallmentPlansDataType } from '../sales-agreements-list/sidebar/InstallmentPlansSidebar'
 

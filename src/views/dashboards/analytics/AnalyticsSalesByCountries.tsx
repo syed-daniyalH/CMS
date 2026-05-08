@@ -6,11 +6,11 @@ import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import OptionsMenu from 'src/@core/components/option-menu'
-import Avatar from "../../../@core/components/mui/avatar";
+import OptionsMenu from 'src/core/components/option-menu'
+import Avatar from "../../../core/components/mui/avatar";
 
 interface DataType {
   title: string

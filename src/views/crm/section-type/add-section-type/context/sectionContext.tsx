@@ -1,7 +1,7 @@
 // ** React Imports
 import { createContext, useMemo, useState, useEffect, ReactNode } from 'react'
 import axios, { AxiosError } from 'axios'
-import axiosInstance from 'src/@core/utils/axiosInstence'
+import axiosInstance from 'src/core/utils/axiosInstence'
 import { DefaultSectionTypeContextType, SectionTypeData, SectionTypeField, ApiResponse } from './types'
 import { useAuth } from 'src/hooks/useAuth'
 import toast from 'react-hot-toast'

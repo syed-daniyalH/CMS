@@ -7,11 +7,11 @@ import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import CustomChip from 'src/@core/components/mui/chip'
-import OptionsMenu from 'src/@core/components/option-menu'
+import CustomChip from 'src/core/components/mui/chip'
+import OptionsMenu from 'src/core/components/option-menu'
 
 interface DataType {
   icon: string

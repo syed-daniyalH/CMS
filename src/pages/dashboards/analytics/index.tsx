@@ -2,15 +2,15 @@
 import Grid from '@mui/material/Grid'
 
 // ** Custom Component Import
-import KeenSliderWrapper from 'src/@core/styles/libs/keen-slider'
-import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
+import KeenSliderWrapper from 'src/core/styles/libs/keen-slider'
+import ApexChartWrapper from 'src/core/styles/libs/react-apexcharts'
 import {Box} from "@mui/material";
-import CustomAvatar from "src/@core/components/mui/avatar";
-import {getInitials} from "src/@core/utils/get-initials";
+import CustomAvatar from "src/core/components/mui/avatar";
+import {getInitials} from "src/core/utils/get-initials";
 import Typography from "@mui/material/Typography";
-import {globalDateFormat} from "src/@core/utils/format";
+import {globalDateFormat} from "src/core/utils/format";
 import Button from "@mui/material/Button";
-import Icon from "src/@core/components/icon";
+import Icon from "src/core/components/icon";
 import TabList from "@mui/lab/TabList";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";

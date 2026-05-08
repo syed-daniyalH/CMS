@@ -7,13 +7,13 @@ import IconButton from '@mui/material/IconButton'
 import Button from "@mui/material/Button";
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 //** Translation
 import {useTranslation} from "react-i18next";
 import Link from "next/link";
 import {GridRowSelectionModel} from "@mui/x-data-grid";
-import {encodeParameters} from "src/@core/utils/encrypted-params";
+import {encodeParameters} from "src/core/utils/encrypted-params";
 
 interface Props {
   value: string

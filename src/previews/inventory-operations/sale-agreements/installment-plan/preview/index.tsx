@@ -4,15 +4,15 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import {useTranslation} from "react-i18next";
-import Icon from 'src/@core/components/icon';
+import Icon from 'src/core/components/icon';
 import {useState} from "react";
 import A4Preview from "./pdf-view/A4Preview";
 import {InventoryPreviewDataType} from "./type";
 import Link from "next/link";
-import {encodeParameters} from "src/@core/utils/encrypted-params";
+import {encodeParameters} from "src/core/utils/encrypted-params";
 import {useAuth} from "src/hooks/useAuth";
 import jsPDF from 'jspdf';
-import {InstallmentPlanHtml} from "src/@core/utils/document-html/sale-agreements/InstallmentPlanHtml";
+import {InstallmentPlanHtml} from "src/core/utils/document-html/sale-agreements/InstallmentPlanHtml";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useAppDefaults } from '../../../../../hooks/useAppDefaults'
 

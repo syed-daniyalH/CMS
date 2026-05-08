@@ -4,14 +4,14 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import {useTranslation} from "react-i18next";
-import Icon from 'src/@core/components/icon';
+import Icon from 'src/core/components/icon';
 import {useState} from "react";
 import A4Preview from "./pdf-view/A4Preview";
 import {singleReceiptDataType} from "./type";
 
 import {useAuth} from "src/hooks/useAuth";
 import jsPDF from 'jspdf';
-import {SingleReceiptHtml} from "src/@core/utils/document-html/receipt/SingleReceiptDetailHtml";
+import {SingleReceiptHtml} from "src/core/utils/document-html/receipt/SingleReceiptDetailHtml";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useAppDefaults } from '../../../../../hooks/useAppDefaults'
 

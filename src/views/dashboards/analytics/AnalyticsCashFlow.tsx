@@ -11,7 +11,7 @@ import { styled, useTheme } from '@mui/material/styles'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 
 // ** Util Import
@@ -19,11 +19,11 @@ import {useTranslation} from "react-i18next";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
 import {useEffect, useState} from "react";
-import {defaultCurrencyCode, formatCurrency, getDateRange, kFormatter} from "../../../@core/utils/format";
+import {defaultCurrencyCode, formatCurrency, getDateRange, kFormatter} from "../../../core/utils/format";
 import {getCashFlowChartStats} from "../../../store/dashboard";
 import {useAuth} from "../../../hooks/useAuth";
 import {useAppDefaults} from "../../../hooks/useAppDefaults";
-import DateViewFormat from "../../../@core/components/date-view";
+import DateViewFormat from "../../../core/components/date-view";
 
 const StyledGrid = styled(Grid)<GridProps>(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {

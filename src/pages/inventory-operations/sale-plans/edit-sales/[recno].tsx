@@ -1,6 +1,6 @@
 // ** Styled Component
 import {GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType} from "next/types";
-import {decodeParameters} from "src/@core/utils/encrypted-params";
+import {decodeParameters} from "src/core/utils/encrypted-params";
 import SalePlansForm from "src/views/inventory-operations/sale-plans/sales-form/SalePlansForm";
 import { SalePlansProvider } from '../../../../views/inventory-operations/sale-plans/context/SalePlansContext';
 import {useRouter} from "next/router";

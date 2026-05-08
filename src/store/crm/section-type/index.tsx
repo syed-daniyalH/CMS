@@ -3,7 +3,7 @@ import {createAsyncThunk, createSlice, CreateSliceOptions} from '@reduxjs/toolki
 
 // ** Axios Imports
 import axios from 'axios'
-import axiosInstance from 'src/@core/utils/axiosInstence'
+import axiosInstance from 'src/core/utils/axiosInstence'
 
 
 export interface SectionTypeSearchParams {

@@ -3,9 +3,9 @@ import {useTheme} from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import {CardHeader} from "@mui/material";
 import CardContent from "@mui/material/CardContent";
-import ReactApexcharts from "../../../@core/components/react-apexcharts";
+import ReactApexcharts from "../../../core/components/react-apexcharts";
 import Divider from "@mui/material/Divider";
-import {kFormatter} from "../../../@core/utils/format";
+import {kFormatter} from "../../../core/utils/format";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
 import {useTranslation} from "react-i18next";
@@ -14,7 +14,7 @@ import {getPayPeriodSalary} from "../../../store/dashboard";
 
 //@ts-ignore
 import {useRouter} from "next/navigation";
-import {encodeParameters} from "../../../@core/utils/encrypted-params";
+import {encodeParameters} from "../../../core/utils/encrypted-params";
 
 const HCMMonthlySalaries = () => {
 

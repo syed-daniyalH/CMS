@@ -14,19 +14,19 @@ import Grid, { GridProps } from '@mui/material/Grid'
 import { styled, useTheme } from '@mui/material/styles'
 
 // ** Icons Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Third Party Imports
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Imports
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Hook Import
-import { useSettings } from 'src/@core/hooks/useSettings'
+import { useSettings } from 'src/core/hooks/useSettings'
 
 // ** Util Import
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 
 const yearOptions = [new Date().getFullYear() - 1, new Date().getFullYear() - 2, new Date().getFullYear() - 3]
 

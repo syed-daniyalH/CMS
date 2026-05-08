@@ -14,16 +14,16 @@
   import { useDispatch, useSelector } from 'react-redux'
   import { useTranslation } from 'react-i18next'
 
-  import Icon from 'src/@core/components/icon'
-  import CustomTextField from 'src/@core/components/mui/text-field'
-  import TypoLabel from 'src/custom-components/inputs/TypoLabel'
-  import FormSaveButton from 'src/custom-components/form-save-button'
-  import CustomBackdrop from 'src/@core/components/loading'
+  import Icon from 'src/core/components/icon'
+  import CustomTextField from 'src/core/components/mui/text-field'
+  import TypoLabel from 'src/components/inputs/TypoLabel'
+  import FormSaveButton from 'src/components/form-save-button'
+  import CustomBackdrop from 'src/core/components/loading'
 
-  import axiosInstance from 'src/@core/utils/axiosInstence'
+  import axiosInstance from 'src/core/utils/axiosInstence'
   import { AppDispatch, RootState } from 'src/store'
   import { getData } from 'src/store/settings/tags'
-  import { saveCloseKey, saveNewKey } from 'src/@core/utils/translation-file'
+  import { saveCloseKey, saveNewKey } from 'src/core/utils/translation-file'
 
   export interface TagSchema {
     _id?: string

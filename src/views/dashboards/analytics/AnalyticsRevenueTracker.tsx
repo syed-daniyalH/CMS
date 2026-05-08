@@ -11,20 +11,20 @@ import CardContent from '@mui/material/CardContent'
 import {ApexOptions} from 'apexcharts'
 
 // ** Type Import
-import {ThemeColor} from 'src/@core/layouts/types'
+import {ThemeColor} from 'src/core/layouts/types'
 
 // ** Custom Components Imports
-import Icon from 'src/@core/components/icon'
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import Icon from 'src/core/components/icon'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Util Import
-import {hexToRGBA} from 'src/@core/utils/hex-to-rgba'
+import {hexToRGBA} from 'src/core/utils/hex-to-rgba'
 import {useTranslation} from "react-i18next";
 import Divider from "@mui/material/Divider";
 import {useEffect, useState} from "react";
 import {useAuth} from "../../../hooks/useAuth";
-import {getDateRange, globalDateFormat, kFormatter} from "../../../@core/utils/format";
+import {getDateRange, globalDateFormat, kFormatter} from "../../../core/utils/format";
 import {useSelector} from "react-redux";
 import {RootState} from "../../../store";
 

@@ -14,8 +14,8 @@ import MuiTimeline, { TimelineProps } from '@mui/lab/Timeline'
 import MuiCardHeader, { CardHeaderProps } from '@mui/material/CardHeader'
 
 // ** Custom Components Imports
-import Icon from 'src/@core/components/icon'
-import OptionsMenu from 'src/@core/components/option-menu'
+import Icon from 'src/core/components/icon'
+import OptionsMenu from 'src/core/components/option-menu'
 
 // Styled Timeline component
 const Timeline = styled(MuiTimeline)<TimelineProps>({

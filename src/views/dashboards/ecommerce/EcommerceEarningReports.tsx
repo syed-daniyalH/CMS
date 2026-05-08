@@ -7,24 +7,24 @@ import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Third Party Imports
 import { ApexOptions } from 'apexcharts'
 
 // ** Type Import
-import { ThemeColor } from 'src/@core/layouts/types'
+import { ThemeColor } from 'src/core/layouts/types'
 
 // ** Custom Components Imports
-import OptionsMenu from 'src/@core/components/option-menu'
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import OptionsMenu from 'src/core/components/option-menu'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Hook Import
-import UseBgColor from 'src/@core/hooks/useBgColor'
+import UseBgColor from 'src/core/hooks/useBgColor'
 
 // ** Util Import
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 
 interface DataType {
   title: string

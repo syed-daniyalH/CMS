@@ -3,7 +3,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import {singleReceiptDataType} from "../type";
 import {useAuth} from "src/hooks/useAuth";
-import {SingleReceiptHtml} from "src/@core/utils/document-html/receipt/SingleReceiptDetailHtml";
+import {SingleReceiptHtml} from "src/core/utils/document-html/receipt/SingleReceiptDetailHtml";
 import { useAppDefaults } from 'src/hooks/useAppDefaults'
 
 interface Props {

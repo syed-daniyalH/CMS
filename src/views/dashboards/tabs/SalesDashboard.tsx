@@ -6,7 +6,7 @@ import AnalyticsTopCustomers from "../analytics/AnalyticsTopCustomers";
 import AnalyticsEstimatesByCustomer from "../analytics/AnalyticsEstimatesByCustomer";
 import AnalyticsStatsCard from "../analytics/AnalyticsStatsCard";
 import {useAuth} from "../../../hooks/useAuth";
-import {getDateRange, kFormatter} from "../../../@core/utils/format";
+import {getDateRange, kFormatter} from "../../../core/utils/format";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
 import {useEffect} from "react";

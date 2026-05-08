@@ -1,6 +1,6 @@
 // ** Styled Component
 import {GetStaticProps, GetStaticPropsContext, InferGetStaticPropsType} from "next/types";
-import {decodeParameters} from "src/@core/utils/encrypted-params";
+import {decodeParameters} from "src/core/utils/encrypted-params";
 import {AgentProvider} from "src/views/inventory-operations/agents/context/AgentContext";
 import {useRouter} from "next/router";
 import {useEffect, useState} from "react";

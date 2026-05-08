@@ -14,20 +14,20 @@ import Divider from "@mui/material/Divider";
 
 
 // ** Utils Imports
-import {HeaderChipSizes, ContentSizes} from 'src/@core/utils/reports-dashbard-sizes'
+import {HeaderChipSizes, ContentSizes} from 'src/core/utils/reports-dashbard-sizes'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import CustomChip from 'src/@core/components/mui/chip'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import CustomChip from 'src/core/components/mui/chip'
 
 // ** Next Imports
 import Link from "next/link";
 import IconButton from "@mui/material/IconButton";
 import {AbilityContext} from "../../../../layouts/components/acl/Can";
-import {CustomerReportsDescKey} from "src/@core/utils/translation-file";
+import {CustomerReportsDescKey} from "src/core/utils/translation-file";
 
 
 

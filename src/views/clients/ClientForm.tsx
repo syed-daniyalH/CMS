@@ -8,11 +8,11 @@ import Divider from '@mui/material/Divider'
 import MenuItem from '@mui/material/MenuItem'
 import Typography from '@mui/material/Typography'
 import toast from 'react-hot-toast'
-import CustomTextField from 'src/@core/components/mui/text-field'
-import CustomBackdrop from 'src/@core/components/loading'
-import axiosInstance from 'src/@core/utils/axiosInstence'
-import GlobalImageUploader, { GlobalImageUploaderRef } from 'src/custom-components/media/GlobalImageUploader'
-import { uploadPendingFromRef } from 'src/custom-components/media/uploadOnSubmit'
+import CustomTextField from 'src/core/components/mui/text-field'
+import CustomBackdrop from 'src/core/components/loading'
+import axiosInstance from 'src/core/utils/axiosInstence'
+import GlobalImageUploader, { GlobalImageUploaderRef } from 'src/components/media/GlobalImageUploader'
+import { uploadPendingFromRef } from 'src/components/media/uploadOnSubmit'
 
 type Option = { id: string; name: string; slug?: string }
 

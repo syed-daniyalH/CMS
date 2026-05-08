@@ -19,10 +19,10 @@ import TimelineConnector from '@mui/lab/TimelineConnector'
 import MuiTimeline, { TimelineProps } from '@mui/lab/Timeline'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import OptionsMenu from 'src/@core/components/option-menu'
+import OptionsMenu from 'src/core/components/option-menu'
 
 interface TimelineItemData {
   name: string

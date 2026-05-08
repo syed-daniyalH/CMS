@@ -17,7 +17,7 @@ import CardContent from '@mui/material/CardContent'
 import { DataGrid, GridColDef } from '@mui/x-data-grid'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Store & Actions Imports
 import { useDispatch, useSelector } from 'react-redux'
@@ -25,13 +25,13 @@ import { fetchData, deleteInvoice } from 'src/store/apps/invoice'
 
 // ** Type Imports
 import { RootState, AppDispatch } from 'src/store'
-import { ThemeColor } from 'src/@core/layouts/types'
+import { ThemeColor } from 'src/core/layouts/types'
 import { InvoiceType } from 'src/types/apps/invoiceTypes'
 
 // ** Custom Component Imports
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import OptionsMenu from 'src/@core/components/option-menu'
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import OptionsMenu from 'src/core/components/option-menu'
+import CustomTextField from 'src/core/components/mui/text-field'
 
 interface InvoiceStatusObj {
   [key: string]: {

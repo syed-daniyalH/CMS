@@ -7,10 +7,10 @@ import CardContent from '@mui/material/CardContent'
 import CircularProgress from '@mui/material/CircularProgress'
 
 // ** Type Import
-import { ThemeColor } from 'src/@core/layouts/types'
+import { ThemeColor } from 'src/core/layouts/types'
 
 // ** Custom Components Imports
-import OptionsMenu from 'src/@core/components/option-menu'
+import OptionsMenu from 'src/core/components/option-menu'
 
 interface DataType {
   title: string

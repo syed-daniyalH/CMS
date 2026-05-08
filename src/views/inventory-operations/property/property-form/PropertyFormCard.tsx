@@ -9,24 +9,24 @@ import CardContent from '@mui/material/CardContent'
 import IconButton from '@mui/material/IconButton'
 
 // ** Custom Component Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 import { useTranslation } from 'react-i18next'
-import Icon from 'src/@core/components/icon'
-import TypoLabel from 'src/custom-components/inputs/TypoLabel'
+import Icon from 'src/core/components/icon'
+import TypoLabel from 'src/components/inputs/TypoLabel'
 import { useProperty } from '../context/useProperty'
 import { useRouter } from 'next/navigation'
-import CustomDatePicker from '../../../../@core/components/custom-date-picker'
+import CustomDatePicker from '../../../../core/components/custom-date-picker'
 
 // ** Utils
 // @ts-ignore
 import dateFormat from 'dateformat'
-import { formatCurrency, getProjectDetail, getProjectField, globalSendDateFormat } from '../../../../@core/utils/format'
+import { formatCurrency, getProjectDetail, getProjectField, globalSendDateFormat } from '../../../../core/utils/format'
 
 // ** Dropdowns
-import FloorSelector from '../../../../@core/dropdown-selectors/FloorSelector'
-import PropertyTypeSelector from '../../../../@core/dropdown-selectors/PropertyTypeSelector'
-import PropertyStatusSelector from '../../../../@core/dropdown-selectors/PropertyStatusSelector'
-import PreferenceSelector from '../../../../@core/dropdown-selectors/PreferenceSelector'
+import FloorSelector from '../../../../core/dropdown-selectors/FloorSelector'
+import PropertyTypeSelector from '../../../../core/dropdown-selectors/PropertyTypeSelector'
+import PropertyStatusSelector from '../../../../core/dropdown-selectors/PropertyStatusSelector'
+import PreferenceSelector from '../../../../core/dropdown-selectors/PreferenceSelector'
 
 // ** Hooks
 import { useAuth } from '../../../../hooks/useAuth'

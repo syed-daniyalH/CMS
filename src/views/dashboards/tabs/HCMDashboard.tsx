@@ -14,7 +14,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
 import {useEffect} from "react";
 import {getHCMCardsData} from "../../../store/dashboard";
-import {kFormatter} from "../../../@core/utils/format";
+import {kFormatter} from "../../../core/utils/format";
 import {useTranslation} from "react-i18next";
 
 const HCMDashboard = () => {

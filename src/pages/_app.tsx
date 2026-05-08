@@ -24,30 +24,30 @@ import { defaultACLObj } from 'src/configs/acl'
 import themeConfig from 'src/configs/themeConfig'
 
 // ** Fake-DB Import
-import 'src/@fake-db'
+import 'src/mock-db'
 
 // ** Third Party Import
 import { Toaster } from 'react-hot-toast'
 
 // ** Component Imports
 import UserLayout from 'src/layouts/UserLayout'
-import AclGuard from 'src/@core/components/auth/AclGuard'
-import ThemeComponent from 'src/@core/theme/ThemeComponent'
-import AuthGuard from 'src/@core/components/auth/AuthGuard'
-import GuestGuard from 'src/@core/components/auth/GuestGuard'
+import AclGuard from 'src/core/components/auth/AclGuard'
+import ThemeComponent from 'src/core/theme/ThemeComponent'
+import AuthGuard from 'src/core/components/auth/AuthGuard'
+import GuestGuard from 'src/core/components/auth/GuestGuard'
 
 // ** Spinner Import
-import Spinner from 'src/@core/components/spinner'
+import Spinner from 'src/core/components/spinner'
 
 // ** Contexts
 import { AuthProvider } from 'src/context/AuthContext'
-import { SettingsConsumer, SettingsProvider } from 'src/@core/context/settingsContext'
+import { SettingsConsumer, SettingsProvider } from 'src/core/context/settingsContext'
 
 // ** Styled Components
-import ReactHotToast from 'src/@core/styles/libs/react-hot-toast'
+import ReactHotToast from 'src/core/styles/libs/react-hot-toast'
 
 // ** Utils Imports
-import { createEmotionCache } from 'src/@core/utils/create-emotion-cache'
+import { createEmotionCache } from 'src/core/utils/create-emotion-cache'
 
 // ** Prismjs Styles
 import 'prismjs'
@@ -58,13 +58,13 @@ import 'prismjs/components/prism-tsx'
 // ** React Perfect Scrollbar Style
 import 'react-perfect-scrollbar/dist/css/styles.css'
 
-import 'src/iconify-bundle/icons-bundle-react'
+import 'src/icons/icons-bundle-react'
 
 // ** Global css styles
 import '../../styles/globals.css'
 import axios, {CreateAxiosDefaults} from "axios";
 import {AppDefaultsProvider} from "../context/AppDefaultContext";
-import {useFirebaseNotifications} from "../@core/hooks/useFirebaseNotifications";
+import {useFirebaseNotifications} from "../core/hooks/useFirebaseNotifications";
 import i18n from "i18next";
 import {brandConfigs} from "../configs/branding";
 

@@ -3,9 +3,9 @@ import {useTheme} from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import {CardHeader} from "@mui/material";
 import CardContent from "@mui/material/CardContent";
-import ReactApexcharts from "../../../@core/components/react-apexcharts";
+import ReactApexcharts from "../../../core/components/react-apexcharts";
 import Divider from "@mui/material/Divider";
-import {getDateFromMonth, getDateRange, globalDateFormat, kFormatter} from "../../../@core/utils/format";
+import {getDateFromMonth, getDateRange, globalDateFormat, kFormatter} from "../../../core/utils/format";
 import {useAuth} from "../../../hooks/useAuth";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
@@ -16,7 +16,7 @@ import {getPaymentStats} from "../../../store/dashboard";
 //@ts-ignore
 import dateFormat from 'dateformat'
 import {useRouter} from "next/navigation";
-import {encodeParameters} from "../../../@core/utils/encrypted-params";
+import {encodeParameters} from "../../../core/utils/encrypted-params";
 
 const PaymentAnalyticsBarLine = () => {
 

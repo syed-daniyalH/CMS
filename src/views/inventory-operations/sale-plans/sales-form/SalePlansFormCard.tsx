@@ -11,19 +11,19 @@ import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
 
 // ** Custom Component Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 import { useTranslation } from 'react-i18next'
-import Icon from 'src/@core/components/icon'
-import TypoLabel from 'src/custom-components/inputs/TypoLabel'
+import Icon from 'src/core/components/icon'
+import TypoLabel from 'src/components/inputs/TypoLabel'
 import { useSalePlans } from '../context/useSalePlans'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { SubSalePlanObj } from '../context/types'
-import InstallmentTypeSelector from '../../../../@core/dropdown-selectors/InstallmentTypeSelector'
+import InstallmentTypeSelector from '../../../../core/dropdown-selectors/InstallmentTypeSelector'
 import toast from 'react-hot-toast'
-import { formatCurrency } from '../../../../@core/utils/format'
+import { formatCurrency } from '../../../../core/utils/format'
 import { useAuth } from '../../../../hooks/useAuth'
-import CustomChip from '../../../../@core/components/mui/chip'
+import CustomChip from '../../../../core/components/mui/chip'
 
 // -----------------------------
 // Helpers

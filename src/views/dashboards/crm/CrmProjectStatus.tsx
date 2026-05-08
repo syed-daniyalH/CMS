@@ -10,10 +10,10 @@ import CardContent from '@mui/material/CardContent'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Import
-import Icon from 'src/@core/components/icon'
-import OptionsMenu from 'src/@core/components/option-menu'
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import Icon from 'src/core/components/icon'
+import OptionsMenu from 'src/core/components/option-menu'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 interface DataType {
   title: string

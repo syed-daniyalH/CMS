@@ -6,14 +6,14 @@ import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import Avatar from "../../../@core/components/mui/avatar";
+import Avatar from "../../../core/components/mui/avatar";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../../store";
-import {getDateRange, kFormatter} from "../../../@core/utils/format";
+import {getDateRange, kFormatter} from "../../../core/utils/format";
 import {useAuth} from "../../../hooks/useAuth";
 import {getBankClosingBalances} from "../../../store/dashboard";
 import {useAppDefaults} from "../../../hooks/useAppDefaults";

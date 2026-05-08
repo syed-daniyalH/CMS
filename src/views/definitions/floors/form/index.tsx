@@ -11,26 +11,26 @@ import Grid from "@mui/material/Grid";
 
 
 // ** Icon Imports
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 
 // ** Custom Components Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 import Divider from "@mui/material/Divider";
 import {useTranslation} from "react-i18next";
-import CustomAvatar from "src/@core/components/mui/avatar";
+import CustomAvatar from "src/core/components/mui/avatar";
 import axios from "axios";
 import toast from "react-hot-toast";
 import {useEffect, useState} from "react";
-import TypoLabel from "src/custom-components/inputs/TypoLabel";
+import TypoLabel from "src/components/inputs/TypoLabel";
 import { getData } from 'src/store/definitions/floors';
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "src/store";
-import {saveCloseKey, saveNewKey} from "src/@core/utils/translation-file";
-import FormSaveButton from "src/custom-components/form-save-button";
-import CustomBackdrop from "src/@core/components/loading";
-import FloorSelector from '../../../../@core/dropdown-selectors/FloorSelector'
+import {saveCloseKey, saveNewKey} from "src/core/utils/translation-file";
+import FormSaveButton from "src/components/form-save-button";
+import CustomBackdrop from "src/core/components/loading";
+import FloorSelector from '../../../../core/dropdown-selectors/FloorSelector'
 import { getDefaultFloors } from '../../../../store/dropdowns'
-import { getProjectDetail } from '../../../../@core/utils/format'
+import { getProjectDetail } from '../../../../core/utils/format'
 import { useAuth } from '../../../../hooks/useAuth'
 import { MenuItem } from '@mui/material'
 

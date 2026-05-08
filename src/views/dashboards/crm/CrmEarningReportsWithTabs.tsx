@@ -18,13 +18,13 @@ import { Theme, useTheme } from '@mui/material/styles'
 import { ApexOptions } from 'apexcharts'
 
 // ** Custom Components Import
-import Icon from 'src/@core/components/icon'
-import OptionsMenu from 'src/@core/components/option-menu'
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import ReactApexcharts from 'src/@core/components/react-apexcharts'
+import Icon from 'src/core/components/icon'
+import OptionsMenu from 'src/core/components/option-menu'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import ReactApexcharts from 'src/core/components/react-apexcharts'
 
 // ** Util Import
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 
 type ApexChartSeries = NonNullable<ApexOptions['series']>
 type ApexChartSeriesData = Exclude<ApexChartSeries[0], number>

@@ -3,7 +3,7 @@ import { createContext, useMemo, useState } from 'react'
 import axios from "axios";
 import { AgentDataType, DefaultValuesType, Nominee } from './types'
 import {useAuth} from "src/hooks/useAuth";
-import { agentFormType, agentProfileFormType } from 'src/@core/utils/form-types'
+import { agentFormType, agentProfileFormType } from 'src/core/utils/form-types'
 
 // ** Defaults
 const defaultProvider: DefaultValuesType = {

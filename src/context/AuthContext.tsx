@@ -17,7 +17,7 @@ import {
   ErrCallbackType,
   LoginDataType
 } from './types'
-import { localServerAddress } from '../@core/utils/form-types'
+import { localServerAddress } from '../core/utils/form-types'
 
 // ** Apollo Imports
 import {
@@ -27,7 +27,7 @@ import {
   NormalizedCacheObject
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
-import axiosInstance from 'src/@core/utils/axiosInstence'
+import axiosInstance from 'src/core/utils/axiosInstence'
 
 // ** Defaults
 const defaultProvider: AuthValuesType = {
@@ -77,7 +77,7 @@ type NormalizedAuthUser = {
   avatar?: string | null
 }
 
-const useMockAuth = process.env.NODE_ENV !== 'production'
+const useMockAuth = process.env.NEXT_PUBLIC_USE_MOCK_AUTH === 'true'
 const authHttp = useMockAuth ? axios : axiosInstance
 const authEndpoints = {
   login: useMockAuth ? '/jwt/login' : authConfig.loginEndpoint,
@@ -157,9 +157,9 @@ const AuthProvider = ({ children }: Props) => {
 
   // Setup Apollo Client
   const setupApolloClient = (token: string) => {
-    const gqlBase = process.env.NEXT_PUBLIC_API_URL_LIVE || 'http://tbuez12tkp6df31lpii6i5ql.187.124.213.221.sslip.io'
+    const gqlUrl = process.env.NEXT_PUBLIC_GRAPHQL_URL || `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/graphql`
     const httpLink = createHttpLink({
-      uri: `${gqlBase}/graphql`
+      uri: gqlUrl
     })
     
     const authLink = setContext((_, { headers }) => ({
@@ -332,7 +332,7 @@ const AuthProvider = ({ children }: Props) => {
         setupApolloClient(token)
 
         // Store instance URL
-        const instanceURL = process.env.NEXT_PUBLIC_API_URL || 'http://tbuez12tkp6df31lpii6i5ql.187.124.213.221.sslip.io'
+        const instanceURL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
         sessionStorage.setItem(localServerAddress, `${instanceURL}/`)
         
         if (params.rememberMe) {

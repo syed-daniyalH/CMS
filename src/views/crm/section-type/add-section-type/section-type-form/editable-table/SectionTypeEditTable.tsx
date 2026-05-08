@@ -19,8 +19,8 @@ import Checkbox from '@mui/material/Checkbox'
 import FormControlLabel from '@mui/material/FormControlLabel'
 
 // ** Custom Imports
-import Icon from 'src/@core/components/icon'
-import CustomTextField from "src/@core/components/mui/text-field"
+import Icon from 'src/core/components/icon'
+import CustomTextField from "src/core/components/mui/text-field"
 
 // ** Translation
 import { useTranslation } from "react-i18next"

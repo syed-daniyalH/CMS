@@ -5,12 +5,12 @@ import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 
 // ** Type Import
-import { AnalyticsStatsCardProps } from 'src/@core/components/card-statistics/types'
+import { AnalyticsStatsCardProps } from 'src/core/components/card-statistics/types'
 
 // ** Custom Component Import
-import Icon from 'src/@core/components/icon'
-import CustomChip from 'src/@core/components/mui/chip'
-import CustomAvatar from 'src/@core/components/mui/avatar'
+import Icon from 'src/core/components/icon'
+import CustomChip from 'src/core/components/mui/chip'
+import CustomAvatar from 'src/core/components/mui/avatar'
 
 const AnalyticsStatsCard = (props: AnalyticsStatsCardProps) => {
   // ** Props

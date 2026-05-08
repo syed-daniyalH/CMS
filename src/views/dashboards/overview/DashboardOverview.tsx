@@ -2,13 +2,13 @@
 import Grid from '@mui/material/Grid'
 
 // ** Custom Component Import
-import CustomBackdrop from "src/@core/components/loading";
+import CustomBackdrop from "src/core/components/loading";
 import {useTranslation} from "react-i18next";
 import {Box, CardHeader} from "@mui/material";
 import Typography from "@mui/material/Typography";
-import CustomAvatar from 'src/@core/components/mui/avatar';
+import CustomAvatar from 'src/core/components/mui/avatar';
 import Divider from "@mui/material/Divider";
-import Icon from 'src/@core/components/icon'
+import Icon from 'src/core/components/icon'
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";

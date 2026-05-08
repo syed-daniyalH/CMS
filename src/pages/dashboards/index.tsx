@@ -2,16 +2,16 @@
 import Grid from '@mui/material/Grid'
 
 // ** Custom Component Import
-import KeenSliderWrapper from 'src/@core/styles/libs/keen-slider'
-import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
-import CustomAvatar from "src/@core/components/mui/avatar";
-import {getInitials} from "src/@core/utils/get-initials";
-import CustomBackdrop from "src/@core/components/loading";
+import KeenSliderWrapper from 'src/core/styles/libs/keen-slider'
+import ApexChartWrapper from 'src/core/styles/libs/react-apexcharts'
+import CustomAvatar from "src/core/components/mui/avatar";
+import {getInitials} from "src/core/utils/get-initials";
+import CustomBackdrop from "src/core/components/loading";
 import {useAppDefaults} from "../../hooks/useAppDefaults";
 import {useAuth} from "../../hooks/useAuth";
 import TabList from "@mui/lab/TabList";
 import Tab from "@mui/material/Tab";
-import Icon from "../../@core/components/icon";
+import Icon from "../../core/components/icon";
 import TabContext from "@mui/lab/TabContext";
 import {useTranslation} from "react-i18next";
 import {SyntheticEvent, useState} from "react";
@@ -22,7 +22,7 @@ import Typography from "@mui/material/Typography";
 
 // @ts-ignore
 import dateFormat from "dateformat";
-import {globalDateFormat} from "../../@core/utils/format";
+import {globalDateFormat} from "../../core/utils/format";
 import Button from "@mui/material/Button";
 import AnnouncementsTab from "../../views/dashboards/announcements";
 import ActivityLogs from "../../views/dashboards/activity-logs";

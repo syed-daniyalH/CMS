@@ -8,20 +8,20 @@ import { useTheme } from '@mui/material/styles'
 import CardContent from '@mui/material/CardContent'
 
 // ** Custom Component Imports
-import CustomTextField from 'src/@core/components/mui/text-field'
+import CustomTextField from 'src/core/components/mui/text-field'
 import { useTranslation } from 'react-i18next'
-import Icon from 'src/@core/components/icon'
-import TypoLabel from 'src/custom-components/inputs/TypoLabel'
+import Icon from 'src/core/components/icon'
+import TypoLabel from 'src/components/inputs/TypoLabel'
 import IconButton from '@mui/material/IconButton'
 import { useReceipt } from '../context/useReceipt'
 import { useRouter } from 'next/navigation'
-import CustomDatePicker from '../../../../@core/components/custom-date-picker'
+import CustomDatePicker from '../../../../core/components/custom-date-picker'
 
 //@ts-ignore
 import dateFormat from 'dateformat'
-import { formatCurrency, globalSendDateFormat } from '../../../../@core/utils/format'
-import CustomerSelector from '../../../../@core/dropdown-selectors/CustomerSelector'
-import PaymentModeSelector from '../../../../@core/dropdown-selectors/PaymentModeSelector'
+import { formatCurrency, globalSendDateFormat } from '../../../../core/utils/format'
+import CustomerSelector from '../../../../core/dropdown-selectors/CustomerSelector'
+import PaymentModeSelector from '../../../../core/dropdown-selectors/PaymentModeSelector'
 import ReceiptEditTable from './editable-table/ReceiptEditTable'
 
 

@@ -12,14 +12,14 @@ import {
 } from '@mui/x-data-grid'
 
 // ** Custom Components
-import CustomAvatar from 'src/@core/components/mui/avatar'
+import CustomAvatar from 'src/core/components/mui/avatar'
 import SalePlansTableActions from "./SalePlansTableActions";
 
 // ** Types Imports
-import { ThemeColor } from 'src/@core/layouts/types'
+import { ThemeColor } from 'src/core/layouts/types'
 
 // ** Utils Import
-import { getInitials } from 'src/@core/utils/get-initials'
+import { getInitials } from 'src/core/utils/get-initials'
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "src/store";
 import {useRouter} from "next/router";
@@ -27,13 +27,13 @@ import {useRouter as useNavigationRouter} from "next/navigation";
 import {FilterListObj} from "src/context/types";
 import {PropertyDataParams} from "src/store/inventory-operations/sale-plans";
 import {getData} from "src/store/inventory-operations/sale-plans";
-import {decodeParameters, encodeParameters} from "src/@core/utils/encrypted-params";
-import CustomChip from "src/@core/components/mui/chip";
+import {decodeParameters, encodeParameters} from "src/core/utils/encrypted-params";
+import CustomChip from "src/core/components/mui/chip";
 import CustomerFilterSidebar from "./sidebar/CustomerFilterSidebar";
 import { Card, Divider } from '@mui/material'
 import IconButton from '@mui/material/IconButton'
 import Link from 'next/link'
-import Icon from '../../../../@core/components/icon'
+import Icon from '../../../../core/components/icon'
 
 
 const columns = (): GridColDef[] => ([

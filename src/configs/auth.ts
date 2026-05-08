@@ -1,7 +1,7 @@
 export default {
   meEndpoint: '/api/auth/me',
-  loginEndpoint: `${process.env.NEXT_PUBLIC_API_URL_LIVE}api/auth/login`,
-  registerEndpoint: '/jwt/register',
+  loginEndpoint: '/api/auth/login',
+  registerEndpoint: '/api/auth/register',
   storageTokenKeyName: 'accessToken',
   onTokenExpiration: 'refreshToken' // logout | refreshToken
 }

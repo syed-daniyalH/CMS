@@ -14,8 +14,8 @@ import clsx from 'clsx'
 import { useKeenSlider } from 'keen-slider/react'
 
 // ** Custom Components Imports
-import CustomAvatar from 'src/@core/components/mui/avatar'
-import { hexToRGBA } from 'src/@core/utils/hex-to-rgba'
+import CustomAvatar from 'src/core/components/mui/avatar'
+import { hexToRGBA } from 'src/core/utils/hex-to-rgba'
 
 interface SwiperData {
   img: string
