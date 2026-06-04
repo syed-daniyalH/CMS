@@ -70,7 +70,7 @@ const defaultSuggestionsData: DefaultSuggestionsType[] = [
       },
       {
         icon: 'tabler:device-analytics',
-        suggestion: 'CRM',
+        suggestion: 'CMS',
         link: '/dashboards/crm'
       },
       {

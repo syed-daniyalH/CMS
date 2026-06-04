@@ -70,10 +70,10 @@ import {brandConfigs} from "../configs/branding";
 
 
 
-axios.defaults.baseURL = (process.env.NEXT_PUBLIC_API_URL) + "/en/";
+axios.defaults.baseURL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000') + "/en/";
 
 axios.create({
-  baseURL: (process.env.NEXT_PUBLIC_API_URL) + "/en/", // Set your desired base URL here
+  baseURL: (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000') + "/en/", // Set your desired base URL here
   timeout: 5000, // Set a timeout, if needed
 } as CreateAxiosDefaults);
 

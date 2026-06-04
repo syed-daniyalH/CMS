@@ -27,6 +27,8 @@ export const getData = createAsyncThunk('appCmsPages/getData', async (params: Cm
 
   const raw = response?.data ?? {}
   const list = Array.isArray(raw?.data) ? raw.data : Array.isArray(raw) ? raw : []
+  const safePage = Math.max(Number(params?.page) || 1, 1)
+  const safeLimit = Math.max(Number(params?.limit) || 10, 1)
   const keyword = `${params?.search ?? ''}`.toLowerCase().trim()
   const filtered = keyword
     ? list.filter(
@@ -36,11 +38,15 @@ export const getData = createAsyncThunk('appCmsPages/getData', async (params: Cm
       )
     : list
 
-  const start = Math.max((params.page - 1) * params.limit, 0)
-  const paged = filtered.slice(start, start + params.limit)
+  const start = Math.max((safePage - 1) * safeLimit, 0)
+  const paged = filtered.slice(start, start + safeLimit)
 
   return {
-    params,
+    params: {
+      page: safePage,
+      limit: safeLimit,
+      search: params?.search ?? ''
+    },
     data: paged,
     totalRecords: filtered.length
   }

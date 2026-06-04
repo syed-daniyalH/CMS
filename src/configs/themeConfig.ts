@@ -47,9 +47,19 @@ type ThemeConfig = {
   toastPosition: 'top-left' | 'top-center' | 'top-right' | 'bottom-left' | 'bottom-center' | 'bottom-right'
 }
 
+const resolveTemplateName = () => {
+  const rawName = process.env.NEXT_PUBLIC_APP_NAME ?? 'Indraaj'
+
+  if (rawName.trim().toLowerCase() === 'techionik crm') {
+    return 'Techionik CMS'
+  }
+
+  return rawName
+}
+
 const themeConfig: ThemeConfig = {
   // ** Layout Configs
-  templateName: process.env.NEXT_PUBLIC_APP_NAME??"Indraaj" /* App Name */,
+  templateName: resolveTemplateName() /* App Name */,
   layout: 'vertical' /* vertical | horizontal */,
   mode: 'light' as Mode /* light | dark | semi-dark /*! Note: semi-dark value will only work for Vertical Layout */,
   direction: 'ltr' /* ltr | rtl */,

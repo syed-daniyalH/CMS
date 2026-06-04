@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Box, Button, Card, Divider, Drawer, Grid, IconButton, MenuItem, Typography } from '@mui/material'
+import { Alert, Box, Button, Card, Divider, Drawer, Grid, IconButton, MenuItem, Typography } from '@mui/material'
 import { styled, useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import toast from 'react-hot-toast'
@@ -106,10 +106,6 @@ const PageFormDrawer = ({ open, data, toggle, onSuccess }: Props) => {
       toast.error('Please enter page slug.')
       return
     }
-    if (!state.sectionIds?.length) {
-      toast.error('Please select at least one section.')
-      return
-    }
 
     try {
       setLoading(true)
@@ -189,13 +185,25 @@ const PageFormDrawer = ({ open, data, toggle, onSuccess }: Props) => {
             </Grid>
 
             <Grid item xs={12}>
+              {sections.length === 0 ? (
+                <Alert severity='info' sx={{ mb: 2 }}>
+                  No sections are available yet. You can still save this as a draft page now and attach sections later from the
+                  Sections module.
+                </Alert>
+              ) : null}
+
               <CustomTextField
                 select
                 fullWidth
                 SelectProps={{ multiple: true }}
-                label={<TypoLabel name='Sections' important />}
+                label={<TypoLabel name='Sections' />}
                 value={state.sectionIds}
                 onChange={e => setState((p: any) => ({ ...p, sectionIds: e.target.value }))}
+                helperText={
+                  sections.length
+                    ? 'Optional. Select sections in the order they should appear on the page.'
+                    : 'Optional for draft pages. Add sections later when they are available.'
+                }
               >
                 {sections.map(item => (
                   <MenuItem key={item?._id} value={item?._id}>

@@ -16,7 +16,7 @@ const navigation: HorizontalNavItemsType = [
       },
       {
         icon: 'tabler:device-analytics',
-        title: 'CRM',
+        title: 'CMS',
         path: '/dashboards/crm'
       },
       {

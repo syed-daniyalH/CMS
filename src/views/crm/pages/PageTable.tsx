@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Box, IconButton, Typography } from '@mui/material'
-import { DataGrid, GridColDef, GridRenderCellParams } from '@mui/x-data-grid'
+import { DataGrid, GridColDef, GridOverlay, GridRenderCellParams } from '@mui/x-data-grid'
 import { useDispatch, useSelector } from 'react-redux'
 import Icon from 'src/core/components/icon'
 import CustomTextField from 'src/core/components/mui/text-field'
@@ -74,6 +74,21 @@ const PageTable = ({ onEdit, onDelete }: { onEdit: (row: any) => void; onDelete:
   const [searchValue, setSearchValue] = useState('')
   const [paginationModel, setPaginationModel] = useState({ page: 0, pageSize: 10 })
 
+  const EmptyStateOverlay = () => {
+    const hasSearch = Boolean(searchValue.trim())
+
+    return (
+      <GridOverlay sx={{ flexDirection: 'column', gap: 1.5, py: 8 }}>
+        <Typography variant='h6'>{hasSearch ? 'No matching pages found' : 'No CMS pages yet'}</Typography>
+        <Typography variant='body2' color='text.secondary' sx={{ maxWidth: 520, textAlign: 'center', px: 4 }}>
+          {hasSearch
+            ? 'Try a different title or slug.'
+            : 'This screen only lists pages created in the CMS page builder. Existing website routes will not appear here until you create a CMS page record.'}
+        </Typography>
+      </GridOverlay>
+    )
+  }
+
   useEffect(() => {
     const params: CmsPagesSearchParams = {
       page: paginationModel.page + 1,
@@ -84,7 +99,7 @@ const PageTable = ({ onEdit, onDelete }: { onEdit: (row: any) => void; onDelete:
   }, [dispatch, paginationModel, searchValue])
 
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
       <Box sx={{ p: 2, display: 'flex', justifyContent: 'flex-end' }}>
         <CustomTextField
           value={searchValue}
@@ -102,15 +117,19 @@ const PageTable = ({ onEdit, onDelete }: { onEdit: (row: any) => void; onDelete:
       </Box>
 
       <DataGrid
+        pagination
         disableRowSelectionOnClick
         rows={store?.data ?? []}
+        loading={store?.loadingState?.getData ?? false}
         rowCount={store?.totalRecords ?? 0}
-        getRowId={row => row?._id}
+        getRowId={row => row?._id ?? row?.id ?? row?.slug}
         columns={columns(onEdit, onDelete)}
+        columnHeaderHeight={34}
         paginationMode='server'
         pageSizeOptions={[10, 25, 50]}
         paginationModel={paginationModel}
         onPaginationModelChange={setPaginationModel}
+        slots={{ noRowsOverlay: EmptyStateOverlay, noResultsOverlay: EmptyStateOverlay }}
       />
     </Box>
   )

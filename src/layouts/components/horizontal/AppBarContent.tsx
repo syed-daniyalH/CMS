@@ -92,7 +92,7 @@ const shortcuts: ShortcutsType[] = [
     title: 'Role Management'
   },
   {
-    subtitle: 'CRM',
+    subtitle: 'CMS',
     title: 'Dashboard',
     url: '/dashboards/crm',
     icon: 'tabler:device-analytics'

@@ -16,7 +16,7 @@ const searchData: AppBarSearchType[] = [
     id: 2,
     url: '/dashboards/crm',
     icon: 'tabler:device-analytics',
-    title: 'CRM Dashboard',
+    title: 'CMS Dashboard',
     category: 'dashboards'
   },
   {

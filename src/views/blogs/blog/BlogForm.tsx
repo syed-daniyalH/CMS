@@ -409,6 +409,7 @@ const BlogForm = () => {
         slug: state.slug.trim() || undefined,
         shortDescription: state.shortDescription.trim(),
         content: htmlContent,
+        contentBlocks: convertToRaw(editorState.getCurrentContent()).blocks,
         layout: state.layout,
         publishStatus: state.publishStatus,
         seo: {

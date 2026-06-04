@@ -26,6 +26,14 @@ const users: UserDataType[] = [
     fullName: 'Jane Doe',
     username: 'janedoe',
     email: 'client@vuexy.com'
+  },
+  {
+    id: 3,
+    role: 'admin',
+    password: 'Techionik123!',
+    fullName: 'Local Tester',
+    username: 'localtester',
+    email: 'local@techionik.test'
   }
 ]
 
@@ -112,7 +120,8 @@ mock.onPost('/jwt/register').reply(request => {
 mock.onGet('/auth/me').reply(config => {
   // ** Get token from header
   // @ts-ignore
-  const token = config.headers.Authorization as string
+  const authHeader = config.headers.Authorization as string
+  const token = authHeader?.replace(/^Bearer\s+/i, '') || authHeader
 
   // ** Default response
   let response: ResponseType = [200, {}]
@@ -128,6 +137,12 @@ mock.onGet('/auth/me').reply(config => {
       } else {
         // ** If onTokenExpiration === 'refreshToken' then generate the new token
         const oldTokenDecoded = jwt.decode(token, { complete: true })
+
+        if (!oldTokenDecoded || typeof oldTokenDecoded === 'string') {
+          response = [401, { error: { error: 'Invalid User' } }]
+
+          return
+        }
 
         // ** Get user id from old token
         // @ts-ignore

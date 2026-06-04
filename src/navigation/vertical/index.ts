@@ -18,7 +18,7 @@ const navigation = (): VerticalNavItemsType => {
       ]
     },
     {
-      sectionTitle: 'CRM',
+      sectionTitle: 'CMS',
       action: 'view',
       subject: 'Customer'
     },

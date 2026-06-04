@@ -18,6 +18,7 @@ import CustomBackdrop from 'src/core/components/loading'
 import axiosInstance from 'src/core/utils/axiosInstence'
 import GlobalImageUploader, { GlobalImageUploaderRef } from 'src/components/media/GlobalImageUploader'
 import ServiceIndustriesMultiSelect, { industryIdsFromPopulated } from 'src/core/dropdown-selectors/ServiceIndustriesMultiSelect'
+import SaveActionBar from 'src/views/services/SaveActionBar'
 import { uploadPendingFromRef } from 'src/components/media/uploadOnSubmit'
 import { ContentState, EditorState, convertToRaw } from 'draft-js'
 import draftToHtml from 'draftjs-to-html'
@@ -83,6 +84,7 @@ type TemplateForm = {
   extraSectionDescription: string
   extraSectionButtonLabel: string
   extraSectionButtonUrl: string
+  hideDefaultSections: boolean
   faq: FaqItem[]
   ctaTitle: string
   ctaDescription: string
@@ -192,6 +194,7 @@ const defaultTemplate = (): TemplateForm => ({
   extraSectionDescription: '',
   extraSectionButtonLabel: '',
   extraSectionButtonUrl: '',
+  hideDefaultSections: false,
   faq: [{ question: '', answer: '' }],
   ctaTitle: '',
   ctaDescription: '',
@@ -207,7 +210,7 @@ const defaultForm = (): FormState => ({
   description: '',
   shortDescription: '',
   imageUrl: '',
-  scope: 'blog',
+  scope: 'service',
   isActive: true,
   hasPage: true,
   metaTitle: '',
@@ -252,6 +255,7 @@ const fromTemplateData = (data: any): TemplateForm => ({
   extraSectionDescription: `${data?.extraSection?.description ?? ''}`,
   extraSectionButtonLabel: `${data?.extraSection?.buttonLabel ?? ''}`,
   extraSectionButtonUrl: `${data?.extraSection?.buttonUrl ?? ''}`,
+  hideDefaultSections: Boolean(data?.hideDefaultSections),
   faq: Array.isArray(data?.faq) && data.faq.length
     ? data.faq.map((item: any) => ({ question: `${item?.question ?? ''}`, answer: `${item?.answer ?? ''}` }))
     : [{ question: '', answer: '' }],
@@ -309,6 +313,7 @@ const toTemplateData = (template: TemplateForm) => ({
     buttonLabel: template.extraSectionButtonLabel.trim(),
     buttonUrl: template.extraSectionButtonUrl.trim()
   },
+  hideDefaultSections: template.hideDefaultSections,
   faq: template.faq
     .map(item => ({ question: item.question.trim(), answer: item.answer.trim() }))
     .filter(item => item.question || item.answer),
@@ -353,7 +358,7 @@ const ServiceForm = () => {
           description: `${item?.description ?? ''}`,
           shortDescription: `${item?.shortDescription ?? ''}`,
           imageUrl: `${item?.imageUrl ?? ''}`,
-          scope: `${item?.scope ?? 'blog'}`,
+          scope: 'service',
           isActive: item?.isActive ?? true,
           hasPage: item?.hasPage ?? true,
           metaTitle: `${item?.metaTitle ?? ''}`,
@@ -392,7 +397,7 @@ const ServiceForm = () => {
       shortDescription: form.shortDescription.trim(),
       imageUrl: uploadedImageUrl.trim(),
       templateData: toTemplateData(nextTemplate),
-      scope: form.scope || 'blog',
+      scope: 'service',
       isActive: !!form.isActive,
       hasPage: !!form.hasPage,
       metaTitle: form.metaTitle.trim(),
@@ -418,7 +423,7 @@ const ServiceForm = () => {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, pb: { xs: 12, md: 16 } }}>
       <Card sx={{ borderRadius: 2, overflow: 'hidden', border: '1px solid', borderColor: 'divider' }}>
         <Box sx={{ p: { xs: 2, md: 3 }, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 2 }}>
           <Box>
@@ -428,8 +433,8 @@ const ServiceForm = () => {
             <Button variant='outlined' onClick={() => router.push('/services/list')}>
               Back
             </Button>
-            <Button variant='contained' onClick={save}>
-              {mode === 'edit' ? 'Update Service' : 'Create Service'}
+            <Button variant='contained' onClick={save} disabled={loading}>
+              Save & Close
             </Button>
           </Box>
         </Box>
@@ -477,9 +482,7 @@ const ServiceForm = () => {
               />
             </Grid>
             <Grid item xs={12} md={3}>
-              <CustomTextField select fullWidth label='Scope' value={form.scope} onChange={e => setForm(prev => ({ ...prev, scope: e.target.value ?? 'blog' }))}>
-                <MenuItem value='blog'>blog</MenuItem>
-                <MenuItem value='case-study'>case-study</MenuItem>
+              <CustomTextField select fullWidth label='Scope' value='service' disabled>
                 <MenuItem value='service'>service</MenuItem>
               </CustomTextField>
             </Grid>
@@ -496,6 +499,18 @@ const ServiceForm = () => {
                 label='Has Page'
                 value={form.hasPage ? 'true' : 'false'}
                 onChange={e => setForm(prev => ({ ...prev, hasPage: e.target.value === 'true' }))}
+              >
+                <MenuItem value='true'>True</MenuItem>
+                <MenuItem value='false'>False</MenuItem>
+              </CustomTextField>
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <CustomTextField
+                select
+                fullWidth
+                label='Hide Default Sections'
+                value={form.template.hideDefaultSections ? 'true' : 'false'}
+                onChange={e => setForm(prev => ({ ...prev, template: { ...prev.template, hideDefaultSections: e.target.value === 'true' } }))}
               >
                 <MenuItem value='true'>True</MenuItem>
                 <MenuItem value='false'>False</MenuItem>
@@ -1304,6 +1319,7 @@ const ServiceForm = () => {
           </Grid>
         </Box>
       </Card>
+      <SaveActionBar onBack={() => router.push('/services/list')} onSave={save} saveLabel='Save & Close' loading={loading} />
       <CustomBackdrop open={loading} />
     </Box>
   )

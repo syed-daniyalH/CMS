@@ -9,6 +9,7 @@ import axios from 'axios'
 
 // ** Config
 import authConfig from 'src/configs/auth'
+import { useMockAuth } from 'src/configs/auth'
 
 // ** Types
 import {
@@ -28,6 +29,9 @@ import {
 } from '@apollo/client'
 import { setContext } from '@apollo/client/link/context'
 import axiosInstance from 'src/core/utils/axiosInstence'
+
+const authClient = useMockAuth ? axios : axiosInstance
+const localAuthRequestConfig = useMockAuth ? { baseURL: '' } : {}
 
 // ** Defaults
 const defaultProvider: AuthValuesType = {
@@ -66,6 +70,7 @@ type AuthUserPayload = {
   username?: string
   email?: string
   role?: string
+  roleName?: string
   avatar?: string | null
 }
 
@@ -75,13 +80,6 @@ type NormalizedAuthUser = {
   email: string
   role: string
   avatar?: string | null
-}
-
-const useMockAuth = process.env.NEXT_PUBLIC_USE_MOCK_AUTH === 'true'
-const authHttp = useMockAuth ? axios : axiosInstance
-const authEndpoints = {
-  login: useMockAuth ? '/jwt/login' : authConfig.loginEndpoint,
-  me: useMockAuth ? '/auth/me' : authConfig.meEndpoint
 }
 
 const normalizeAuthUser = (rawUser?: AuthUserPayload | null): NormalizedAuthUser | null => {
@@ -101,7 +99,7 @@ const normalizeAuthUser = (rawUser?: AuthUserPayload | null): NormalizedAuthUser
     id,
     name,
     email,
-    role: rawUser.role ?? 'admin',
+    role: rawUser.role ?? rawUser.roleName ?? 'admin',
     avatar: rawUser.avatar ?? null
   }
 }
@@ -198,7 +196,8 @@ const AuthProvider = ({ children }: Props) => {
         setLoading(true)
         try {
           // Verify token by calling user endpoint
-          const response = await authHttp.get(authEndpoints.me, {
+          const response = await authClient.get(authConfig.meEndpoint, {
+            ...localAuthRequestConfig,
             headers: {
               Authorization: `Bearer ${storedToken}`
             }
@@ -209,7 +208,6 @@ const AuthProvider = ({ children }: Props) => {
             axios.defaults.headers.common['Authorization'] = `Bearer ${storedToken}`
             axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${storedToken}`
             
-            // Transform user data to match your expected structure
             const userData = normalizeAuthUser(extractAuthUser(response.data))
 
             if (!userData) {
@@ -280,8 +278,8 @@ const AuthProvider = ({ children }: Props) => {
     delete axios.defaults.headers.common['Authorization']
     delete axiosInstance.defaults.headers.common['Authorization']
     
-    authHttp
-      .post<LoginResponse>(authEndpoints.login, params)
+    authClient
+      .post<LoginResponse>(authConfig.loginEndpoint, params, localAuthRequestConfig)
       .then(async response => {
         const token = extractAuthToken(response.data)
         const userData = normalizeAuthUser(extractAuthUser(response.data))
@@ -374,8 +372,6 @@ const AuthProvider = ({ children }: Props) => {
 
   const handleLogout = () => {
     clearAuthData()
-    delete axios.defaults.headers.common['Authorization']
-    delete axiosInstance.defaults.headers.common['Authorization']
     router.push('/login')
   }
 
