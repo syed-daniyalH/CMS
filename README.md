@@ -60,6 +60,4 @@ Active admin frontend workspace. The repository contains substantial business mo
 
 ## Developer Credit
 
-Prepared by Nexol Tech Solutions.
-
 - GitHub: [syed-daniyalH](https://github.com/syed-daniyalH)
